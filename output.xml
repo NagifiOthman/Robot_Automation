@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-13T16:54:19.343676" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\TC1.robot">
+<test id="s1-t1" name="Login Test" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-13T16:54:19.849433" level="INFO">Opening browser 'chrome' to base url 'https://orleansexpress.com/fr/'.</msg>
+<arg>https://orleansexpress.com/fr/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-13T16:54:19.848474" elapsed="5.248465"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-09-13T16:54:25.099196" level="INFO">Clicking link 'xpath://*[@id="masthead"]/div[3]/a[3]/img'.</msg>
+<msg time="2025-09-13T16:54:25.239832" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-13T16:54:25.239832" level="FAIL">Link with locator 'xpath://*[@id="masthead"]/div[3]/a[3]/img' not found.</msg>
+<arg>xpath://*[@id="masthead"]/div[3]/a[3]/img</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-13T16:54:25.098160" elapsed="0.146659">Link with locator 'xpath://*[@id="masthead"]/div[3]/a[3]/img' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:login_email</arg>
+<arg>o.nagifi@icloud.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-13T16:54:25.246496" elapsed="0.001054"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:login_pass</arg>
+<arg>Oth@2005.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-13T16:54:25.247550" elapsed="0.000997"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="button_connect"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-13T16:54:25.249153" elapsed="0.001174"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-09-13T16:54:25.250327" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-09-13T16:54:19.832732" elapsed="5.418989">Link with locator 'xpath://*[@id="masthead"]/div[3]/a[3]/img' not found.</status>
+</test>
+<status status="FAIL" start="2025-09-13T16:54:19.352027" elapsed="5.902744"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC1" id="s1" pass="0" fail="1" skip="0">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
