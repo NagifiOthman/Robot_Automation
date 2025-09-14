@@ -14,13 +14,17 @@ ${url}        https://orleansexpress.com/fr/
 Login Test
     
      Open Browser        ${url}    ${browser}
-     Click Link        xpath://*[@id="masthead"]/div[3]/a[2]
-     Input Text        id:login_email    o.nagifi@icloud.com
-     Input Text        id:login_pass    Oth@2005.
-     Click Element     xpath://*[@id="button_connect"]
+     logiinToAccount
      Close Browser
 
 
 
 *** Keywords ***
+logiinToAccount
 
+     Click Link        xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]
+     Input Text        id:login_email    o.nagifi@icloud.com
+     Input Text        id:login_pass    Oth@2005.
+     Click Element     xpath://*[@id="button_connect"]
+    
+    

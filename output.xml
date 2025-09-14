@@ -1,130 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-14T15:11:17.970785" rpa="false" schemaversion="5">
-<suite id="s1" name="TC1" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\TC1.robot">
-<test id="s1-t1" name="Login Test" line="14">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-14T16:37:21.871483" rpa="false" schemaversion="5">
+<suite id="s1" name="inputBoxes" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\inputBoxes.robot">
+<test id="s1-t1" name="TestingInputBox" line="13">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-14T15:11:18.446332" level="INFO">Opening browser 'chrome' to base url 'https://orleansexpress.com/fr/'.</msg>
+<msg time="2025-09-14T16:37:22.362410" level="INFO">Opening browser 'chrome' to base url 'https://orleansexpress.com/fr/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-14T15:11:18.445241" elapsed="7.856296"/>
+<status status="PASS" start="2025-09-14T16:37:22.360939" elapsed="4.703542"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-14T16:37:27.064481" elapsed="0.092470"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-14T16:37:27.178868" level="INFO">Page title is 'Orléans Express | Voyages confortables en Autobus au Québec'.</msg>
+<arg>Orléans Express | Voyages confortables en Autobus au Québec</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-09-14T16:37:27.158044" elapsed="0.020824"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-09-14T15:11:26.303819" level="INFO">Clicking link 'xpath://*[@id="masthead"]/div[3]/a[2]'.</msg>
-<msg time="2025-09-14T15:11:26.458172" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-09-14T15:11:26.458172" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=140.0.7339.128); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff63444fc95+79861]
-	GetHandleVerifier [0x0x7ff63444fcf0+79952]
-	(No symbol) [0x0x7ff6341cc8fc]
-	(No symbol) [0x0x7ff6342259c3]
-	(No symbol) [0x0x7ff634217338]
-	(No symbol) [0x0x7ff63424cada]
-	(No symbol) [0x0x7ff634216bc6]
-	(No symbol) [0x0x7ff63424ccf0]
-	(No symbol) [0x0x7ff634274f8b]
-	(No symbol) [0x0x7ff63424c8b3]
-	(No symbol) [0x0x7ff634215272]
-	(No symbol) [0x0x7ff634216043]
-	GetHandleVerifier [0x0x7ff63470b9cd+2946349]
-	GetHandleVerifier [0x0x7ff634705c4a+2922410]
-	GetHandleVerifier [0x0x7ff6347259d7+3052855]
-	GetHandleVerifier [0x0x7ff63446aa7e+189918]
-	GetHandleVerifier [0x0x7ff634472a1f+222591]
-	GetHandleVerifier [0x0x7ff634458ab4+116244]
-	GetHandleVerifier [0x0x7ff634458c69+116681]
-	GetHandleVerifier [0x0x7ff63443f048+11176]
-	BaseThreadInitThunk [0x0x7ffd32dde8d7+23]
-	RtlUserThreadStart [0x0x7ffd34abc34c+44]
-</msg>
-<arg>xpath://*[@id="masthead"]/div[3]/a[2]</arg>
+<msg time="2025-09-14T16:37:27.184443" level="INFO">Clicking link 'xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]'.</msg>
+<arg>xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="FAIL" start="2025-09-14T15:11:26.302821" elapsed="0.161076">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=140.0.7339.128); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff63444fc95+79861]
-	GetHandleVerifier [0x0x7ff63444fcf0+79952]
-	(No symbol) [0x0x7ff6341cc8fc]
-	(No symbol) [0x0x7ff6342259c3]
-	(No symbol) [0x0x7ff634217338]
-	(No symbol) [0x0x7ff63424cada]
-	(No symbol) [0x0x7ff634216bc6]
-	(No symbol) [0x0x7ff63424ccf0]
-	(No symbol) [0x0x7ff634274f8b]
-	(No symbol) [0x0x7ff63424c8b3]
-	(No symbol) [0x0x7ff634215272]
-	(No symbol) [0x0x7ff634216043]
-	GetHandleVerifier [0x0x7ff63470b9cd+2946349]
-	GetHandleVerifier [0x0x7ff634705c4a+2922410]
-	GetHandleVerifier [0x0x7ff6347259d7+3052855]
-	GetHandleVerifier [0x0x7ff63446aa7e+189918]
-	GetHandleVerifier [0x0x7ff634472a1f+222591]
-	GetHandleVerifier [0x0x7ff634458ab4+116244]
-	GetHandleVerifier [0x0x7ff634458c69+116681]
-	GetHandleVerifier [0x0x7ff63443f048+11176]
-	BaseThreadInitThunk [0x0x7ffd32dde8d7+23]
-	RtlUserThreadStart [0x0x7ffd34abc34c+44]
-</status>
+<status status="PASS" start="2025-09-14T16:37:27.178868" elapsed="0.290610"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<arg>id:login_email</arg>
-<arg>o.nagifi@icloud.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-14T15:11:26.464919" elapsed="0.001077"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-14T16:37:27.471650" level="INFO">${password_txt} = id:login_pass</msg>
+<var>${password_txt}</var>
 <arg>id:login_pass</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-14T16:37:27.470475" elapsed="0.001175"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-09-14T16:37:27.547174" level="INFO">Element 'id:login_pass' is displayed.</msg>
+<arg>${password_txt}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-14T16:37:27.472800" elapsed="0.074374"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${password_txt}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-09-14T16:37:27.548204" elapsed="0.050645"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-14T16:37:27.598849" level="INFO">Typing text 'Oth@2005.' into text field 'id:login_pass'.</msg>
+<arg>${password_txt}</arg>
 <arg>Oth@2005.</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-14T15:11:26.465996" elapsed="0.001028"/>
+<status status="PASS" start="2025-09-14T16:37:27.598849" elapsed="0.201969"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath://*[@id="button_connect"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-14T15:11:26.467024" elapsed="0.000000"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-14T16:37:32.807419" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-14T16:37:27.800818" elapsed="5.006601"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${password_txt}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-14T16:37:32.807419" elapsed="0.066362"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-14T16:37:35.885487" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-14T16:37:32.876271" elapsed="3.009216"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-09-14T15:11:26.468054" elapsed="0.000000"/>
+<status status="PASS" start="2025-09-14T16:37:35.885487" elapsed="2.429331"/>
 </kw>
-<status status="FAIL" start="2025-09-14T15:11:18.428603" elapsed="8.040454">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=140.0.7339.128); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff63444fc95+79861]
-	GetHandleVerifier [0x0x7ff63444fcf0+79952]
-	(No symbol) [0x0x7ff6341cc8fc]
-	(No symbol) [0x0x7ff6342259c3]
-	(No symbol) [0x0x7ff634217338]
-	(No symbol) [0x0x7ff63424cada]
-	(No symbol) [0x0x7ff634216bc6]
-	(No symbol) [0x0x7ff63424ccf0]
-	(No symbol) [0x0x7ff634274f8b]
-	(No symbol) [0x0x7ff63424c8b3]
-	(No symbol) [0x0x7ff634215272]
-	(No symbol) [0x0x7ff634216043]
-	GetHandleVerifier [0x0x7ff63470b9cd+2946349]
-	GetHandleVerifier [0x0x7ff634705c4a+2922410]
-	GetHandleVerifier [0x0x7ff6347259d7+3052855]
-	GetHandleVerifier [0x0x7ff63446aa7e+189918]
-	GetHandleVerifier [0x0x7ff634472a1f+222591]
-	GetHandleVerifier [0x0x7ff634458ab4+116244]
-	GetHandleVerifier [0x0x7ff634458c69+116681]
-	GetHandleVerifier [0x0x7ff63443f048+11176]
-	BaseThreadInitThunk [0x0x7ffd32dde8d7+23]
-	RtlUserThreadStart [0x0x7ffd34abc34c+44]
-</status>
+<status status="PASS" start="2025-09-14T16:37:22.358936" elapsed="15.955882"/>
 </test>
-<status status="FAIL" start="2025-09-14T15:11:17.977392" elapsed="8.495106"/>
+<status status="PASS" start="2025-09-14T16:37:21.883144" elapsed="16.431674"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="TC1" id="s1" pass="0" fail="1" skip="0">TC1</stat>
+<stat name="inputBoxes" id="s1" pass="1" fail="0" skip="0">inputBoxes</stat>
 </suite>
 </statistics>
 <errors>
