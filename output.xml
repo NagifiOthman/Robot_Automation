@@ -1,46 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-13T16:54:19.343676" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-14T15:11:17.970785" rpa="false" schemaversion="5">
 <suite id="s1" name="TC1" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\TC1.robot">
-<test id="s1-t1" name="Login Test" line="11">
+<test id="s1-t1" name="Login Test" line="14">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-13T16:54:19.849433" level="INFO">Opening browser 'chrome' to base url 'https://orleansexpress.com/fr/'.</msg>
-<arg>https://orleansexpress.com/fr/</arg>
-<arg>chrome</arg>
+<msg time="2025-09-14T15:11:18.446332" level="INFO">Opening browser 'chrome' to base url 'https://orleansexpress.com/fr/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-13T16:54:19.848474" elapsed="5.248465"/>
+<status status="PASS" start="2025-09-14T15:11:18.445241" elapsed="7.856296"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-09-13T16:54:25.099196" level="INFO">Clicking link 'xpath://*[@id="masthead"]/div[3]/a[3]/img'.</msg>
-<msg time="2025-09-13T16:54:25.239832" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-09-13T16:54:25.239832" level="FAIL">Link with locator 'xpath://*[@id="masthead"]/div[3]/a[3]/img' not found.</msg>
-<arg>xpath://*[@id="masthead"]/div[3]/a[3]/img</arg>
+<msg time="2025-09-14T15:11:26.303819" level="INFO">Clicking link 'xpath://*[@id="masthead"]/div[3]/a[2]'.</msg>
+<msg time="2025-09-14T15:11:26.458172" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-14T15:11:26.458172" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=140.0.7339.128); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff63444fc95+79861]
+	GetHandleVerifier [0x0x7ff63444fcf0+79952]
+	(No symbol) [0x0x7ff6341cc8fc]
+	(No symbol) [0x0x7ff6342259c3]
+	(No symbol) [0x0x7ff634217338]
+	(No symbol) [0x0x7ff63424cada]
+	(No symbol) [0x0x7ff634216bc6]
+	(No symbol) [0x0x7ff63424ccf0]
+	(No symbol) [0x0x7ff634274f8b]
+	(No symbol) [0x0x7ff63424c8b3]
+	(No symbol) [0x0x7ff634215272]
+	(No symbol) [0x0x7ff634216043]
+	GetHandleVerifier [0x0x7ff63470b9cd+2946349]
+	GetHandleVerifier [0x0x7ff634705c4a+2922410]
+	GetHandleVerifier [0x0x7ff6347259d7+3052855]
+	GetHandleVerifier [0x0x7ff63446aa7e+189918]
+	GetHandleVerifier [0x0x7ff634472a1f+222591]
+	GetHandleVerifier [0x0x7ff634458ab4+116244]
+	GetHandleVerifier [0x0x7ff634458c69+116681]
+	GetHandleVerifier [0x0x7ff63443f048+11176]
+	BaseThreadInitThunk [0x0x7ffd32dde8d7+23]
+	RtlUserThreadStart [0x0x7ffd34abc34c+44]
+</msg>
+<arg>xpath://*[@id="masthead"]/div[3]/a[2]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="FAIL" start="2025-09-13T16:54:25.098160" elapsed="0.146659">Link with locator 'xpath://*[@id="masthead"]/div[3]/a[3]/img' not found.</status>
+<status status="FAIL" start="2025-09-14T15:11:26.302821" elapsed="0.161076">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=140.0.7339.128); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff63444fc95+79861]
+	GetHandleVerifier [0x0x7ff63444fcf0+79952]
+	(No symbol) [0x0x7ff6341cc8fc]
+	(No symbol) [0x0x7ff6342259c3]
+	(No symbol) [0x0x7ff634217338]
+	(No symbol) [0x0x7ff63424cada]
+	(No symbol) [0x0x7ff634216bc6]
+	(No symbol) [0x0x7ff63424ccf0]
+	(No symbol) [0x0x7ff634274f8b]
+	(No symbol) [0x0x7ff63424c8b3]
+	(No symbol) [0x0x7ff634215272]
+	(No symbol) [0x0x7ff634216043]
+	GetHandleVerifier [0x0x7ff63470b9cd+2946349]
+	GetHandleVerifier [0x0x7ff634705c4a+2922410]
+	GetHandleVerifier [0x0x7ff6347259d7+3052855]
+	GetHandleVerifier [0x0x7ff63446aa7e+189918]
+	GetHandleVerifier [0x0x7ff634472a1f+222591]
+	GetHandleVerifier [0x0x7ff634458ab4+116244]
+	GetHandleVerifier [0x0x7ff634458c69+116681]
+	GetHandleVerifier [0x0x7ff63443f048+11176]
+	BaseThreadInitThunk [0x0x7ffd32dde8d7+23]
+	RtlUserThreadStart [0x0x7ffd34abc34c+44]
+</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>id:login_email</arg>
 <arg>o.nagifi@icloud.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-13T16:54:25.246496" elapsed="0.001054"/>
+<status status="NOT RUN" start="2025-09-14T15:11:26.464919" elapsed="0.001077"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>id:login_pass</arg>
 <arg>Oth@2005.</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-13T16:54:25.247550" elapsed="0.000997"/>
+<status status="NOT RUN" start="2025-09-14T15:11:26.465996" elapsed="0.001028"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>xpath://*[@id="button_connect"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-09-13T16:54:25.249153" elapsed="0.001174"/>
+<status status="NOT RUN" start="2025-09-14T15:11:26.467024" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-09-13T16:54:25.250327" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-09-14T15:11:26.468054" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2025-09-13T16:54:19.832732" elapsed="5.418989">Link with locator 'xpath://*[@id="masthead"]/div[3]/a[3]/img' not found.</status>
+<status status="FAIL" start="2025-09-14T15:11:18.428603" elapsed="8.040454">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=140.0.7339.128); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff63444fc95+79861]
+	GetHandleVerifier [0x0x7ff63444fcf0+79952]
+	(No symbol) [0x0x7ff6341cc8fc]
+	(No symbol) [0x0x7ff6342259c3]
+	(No symbol) [0x0x7ff634217338]
+	(No symbol) [0x0x7ff63424cada]
+	(No symbol) [0x0x7ff634216bc6]
+	(No symbol) [0x0x7ff63424ccf0]
+	(No symbol) [0x0x7ff634274f8b]
+	(No symbol) [0x0x7ff63424c8b3]
+	(No symbol) [0x0x7ff634215272]
+	(No symbol) [0x0x7ff634216043]
+	GetHandleVerifier [0x0x7ff63470b9cd+2946349]
+	GetHandleVerifier [0x0x7ff634705c4a+2922410]
+	GetHandleVerifier [0x0x7ff6347259d7+3052855]
+	GetHandleVerifier [0x0x7ff63446aa7e+189918]
+	GetHandleVerifier [0x0x7ff634472a1f+222591]
+	GetHandleVerifier [0x0x7ff634458ab4+116244]
+	GetHandleVerifier [0x0x7ff634458c69+116681]
+	GetHandleVerifier [0x0x7ff63443f048+11176]
+	BaseThreadInitThunk [0x0x7ffd32dde8d7+23]
+	RtlUserThreadStart [0x0x7ffd34abc34c+44]
+</status>
 </test>
-<status status="FAIL" start="2025-09-13T16:54:19.352027" elapsed="5.902744"/>
+<status status="FAIL" start="2025-09-14T15:11:17.977392" elapsed="8.495106"/>
 </suite>
 <statistics>
 <total>
