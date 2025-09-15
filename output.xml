@@ -1,79 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-14T16:37:21.871483" rpa="false" schemaversion="5">
-<suite id="s1" name="inputBoxes" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\inputBoxes.robot">
-<test id="s1-t1" name="TestingInputBox" line="13">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-15T19:47:28.942460" rpa="false" schemaversion="5">
+<suite id="s1" name="RadioButtons" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\RadioButtons.robot">
+<test id="s1-t1" name="TestingRadioBox" line="10">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:37:22.362410" level="INFO">Opening browser 'chrome' to base url 'https://orleansexpress.com/fr/'.</msg>
+<msg time="2025-09-15T19:47:29.427716" level="INFO">Opening browser 'chrome' to base url 'https://www.letskodeit.com/practice'.</msg>
 <arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-14T16:37:22.360939" elapsed="4.703542"/>
+<status status="PASS" start="2025-09-15T19:47:29.427716" elapsed="8.276024"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-14T16:37:27.064481" elapsed="0.092470"/>
+<status status="PASS" start="2025-09-15T19:47:37.706006" elapsed="0.075098"/>
 </kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:37:27.178868" level="INFO">Page title is 'Orléans Express | Voyages confortables en Autobus au Québec'.</msg>
-<arg>Orléans Express | Voyages confortables en Autobus au Québec</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-09-14T16:37:27.158044" elapsed="0.020824"/>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-15T19:47:37.784844" elapsed="0.000998"/>
 </kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:37:27.184443" level="INFO">Clicking link 'xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]'.</msg>
-<arg>xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-14T16:37:27.178868" elapsed="0.290610"/>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:47:37.787836" level="INFO">Selecting 'bmw' from radio button 'cars'.</msg>
+<arg>cars</arg>
+<arg>bmw</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-09-15T19:47:37.786840" elapsed="6.212588"/>
 </kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-14T16:37:27.471650" level="INFO">${password_txt} = id:login_pass</msg>
-<var>${password_txt}</var>
-<arg>id:login_pass</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-14T16:37:27.470475" elapsed="0.001175"/>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:47:44.008073" level="INFO">Selecting checkbox 'benz'.</msg>
+<arg>benz</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T19:47:44.002532" elapsed="8.164129"/>
 </kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:37:27.547174" level="INFO">Element 'id:login_pass' is displayed.</msg>
-<arg>${password_txt}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-14T16:37:27.472800" elapsed="0.074374"/>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:47:52.168159" level="INFO">Selecting checkbox 'bmw'.</msg>
+<arg>bmw</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T19:47:52.167654" elapsed="8.179160"/>
 </kw>
-<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
-<arg>${password_txt}</arg>
-<doc>Verifies that element identified by ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-09-14T16:37:27.548204" elapsed="0.050645"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:37:27.598849" level="INFO">Typing text 'Oth@2005.' into text field 'id:login_pass'.</msg>
-<arg>${password_txt}</arg>
-<arg>Oth@2005.</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-14T16:37:27.598849" elapsed="0.201969"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-14T16:37:32.807419" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-14T16:37:27.800818" elapsed="5.006601"/>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>${password_txt}</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-14T16:37:32.807419" elapsed="0.066362"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-14T16:37:35.885487" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-14T16:37:32.876271" elapsed="3.009216"/>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-15T19:48:00.354934" level="INFO">Unselecting checkbox 'bmw'.</msg>
+<arg>bmw</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-15T19:48:00.354127" elapsed="8.161068"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-14T16:37:35.885487" elapsed="2.429331"/>
+<status status="PASS" start="2025-09-15T19:48:08.517440" elapsed="4.265985"/>
 </kw>
-<status status="PASS" start="2025-09-14T16:37:22.358936" elapsed="15.955882"/>
+<status status="PASS" start="2025-09-15T19:47:29.420601" elapsed="43.364102"/>
 </test>
-<status status="PASS" start="2025-09-14T16:37:21.883144" elapsed="16.431674"/>
+<status status="PASS" start="2025-09-15T19:47:28.948526" elapsed="43.838386"/>
 </suite>
 <statistics>
 <total>
@@ -82,7 +58,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="inputBoxes" id="s1" pass="1" fail="0" skip="0">inputBoxes</stat>
+<stat name="RadioButtons" id="s1" pass="1" fail="0" skip="0">RadioButtons</stat>
 </suite>
 </statistics>
 <errors>
