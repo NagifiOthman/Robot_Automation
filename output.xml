@@ -1,55 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-15T19:47:28.942460" rpa="false" schemaversion="5">
-<suite id="s1" name="RadioButtons" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\RadioButtons.robot">
-<test id="s1-t1" name="TestingRadioBox" line="10">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-15T20:49:13.213797" rpa="false" schemaversion="5">
+<suite id="s1" name="Dropdown" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\dropdown.robot">
+<test id="s1-t1" name="TestingRadioBox" line="9">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-15T20:49:13.730099" elapsed="0.000000"/>
+</kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-15T19:47:29.427716" level="INFO">Opening browser 'chrome' to base url 'https://www.letskodeit.com/practice'.</msg>
+<msg time="2025-09-15T20:49:13.730099" level="INFO">Opening browser 'chrome' to base url 'https://www.letskodeit.com/practice'.</msg>
 <arg>${url}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-15T19:47:29.427716" elapsed="8.276024"/>
+<status status="PASS" start="2025-09-15T20:49:13.730099" elapsed="5.172927"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-15T19:47:37.706006" elapsed="0.075098"/>
+<status status="PASS" start="2025-09-15T20:49:18.903026" elapsed="1.091768"/>
 </kw>
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>2</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-09-15T19:47:37.784844" elapsed="0.000998"/>
-</kw>
-<kw name="Select Radio Button" owner="SeleniumLibrary">
-<msg time="2025-09-15T19:47:37.787836" level="INFO">Selecting 'bmw' from radio button 'cars'.</msg>
-<arg>cars</arg>
-<arg>bmw</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<status status="PASS" start="2025-09-15T19:47:37.786840" elapsed="6.212588"/>
-</kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-09-15T19:47:44.008073" level="INFO">Selecting checkbox 'benz'.</msg>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-09-15T20:49:19.994794" level="INFO">Selecting options from selection list 'carselect' by value benz.</msg>
+<arg>carselect</arg>
 <arg>benz</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T19:47:44.002532" elapsed="8.164129"/>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-09-15T20:49:19.994794" elapsed="7.173437"/>
 </kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-09-15T19:47:52.168159" level="INFO">Selecting checkbox 'bmw'.</msg>
-<arg>bmw</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T19:47:52.167654" elapsed="8.179160"/>
+<kw name="Select All From List" owner="SeleniumLibrary">
+<msg time="2025-09-15T20:49:27.168231" level="INFO">Selecting all options from list 'multiple-select-example'.</msg>
+<arg>multiple-select-example</arg>
+<doc>Selects all options from multi-selection list ``locator``.</doc>
+<status status="PASS" start="2025-09-15T20:49:27.168231" elapsed="22.463398"/>
 </kw>
-<kw name="Unselect Checkbox" owner="SeleniumLibrary">
-<msg time="2025-09-15T19:48:00.354934" level="INFO">Unselecting checkbox 'bmw'.</msg>
-<arg>bmw</arg>
-<doc>Removes the selection of checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-15T19:48:00.354127" elapsed="8.161068"/>
+<kw name="Unselect From List By Index" owner="SeleniumLibrary">
+<msg time="2025-09-15T20:49:49.634636" level="INFO">Un-selecting options from selection list 'multiple-select-example' by index 1.</msg>
+<arg>multiple-select-example</arg>
+<arg>1</arg>
+<doc>Unselects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-09-15T20:49:49.634636" elapsed="8.167189"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-15T19:48:08.517440" elapsed="4.265985"/>
-</kw>
-<status status="PASS" start="2025-09-15T19:47:29.420601" elapsed="43.364102"/>
+<status status="PASS" start="2025-09-15T20:49:13.723100" elapsed="44.078725"/>
 </test>
-<status status="PASS" start="2025-09-15T19:47:28.948526" elapsed="43.838386"/>
+<status status="PASS" start="2025-09-15T20:49:13.220565" elapsed="44.587653"/>
 </suite>
 <statistics>
 <total>
@@ -58,7 +49,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="RadioButtons" id="s1" pass="1" fail="0" skip="0">RadioButtons</stat>
+<stat name="Dropdown" id="s1" pass="1" fail="0" skip="0">Dropdown</stat>
 </suite>
 </statistics>
 <errors>

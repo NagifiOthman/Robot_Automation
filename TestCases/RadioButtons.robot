@@ -10,7 +10,7 @@ ${url}       https://www.letskodeit.com/practice
 TestingRadioBox
      Open Browser    ${url}    ${Browser}
      Maximize Browser Window
-     Set Selenium Speed    2
+     Set Selenium Speed        1
      Select Radio Button    cars    bmw
      Select Checkbox    benz
      Select Checkbox    bmw
