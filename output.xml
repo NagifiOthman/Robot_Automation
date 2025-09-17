@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-16T20:33:13.024963" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-16T20:36:25.556451" rpa="false" schemaversion="5">
 <suite id="s1" name="Alerts" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\alerts.robot">
 <test id="s1-t1" name="Handling alerts" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-16T20:33:13.545432" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/alerts.php'.</msg>
+<msg time="2025-09-16T20:36:26.040278" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/alerts.php'.</msg>
 <arg>https://www.tutorialspoint.com/selenium/practice/alerts.php</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-16T20:33:13.544155" elapsed="2.196959"/>
+<status status="PASS" start="2025-09-16T20:36:26.039219" elapsed="1.983482"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-16T20:33:15.743523" level="INFO">Clicking element 'xpath:/html/body/main/div/div/div[2]/div[1]/button'.</msg>
+<msg time="2025-09-16T20:36:28.024726" level="INFO">Clicking element 'xpath:/html/body/main/div/div/div[2]/div[1]/button'.</msg>
 <arg>xpath:/html/body/main/div/div/div[2]/div[1]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-16T20:33:15.742521" elapsed="0.119996"/>
+<status status="PASS" start="2025-09-16T20:36:28.023720" elapsed="0.170642"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-16T20:33:17.872929" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-09-16T20:36:30.203571" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-16T20:33:15.862517" elapsed="2.010412"/>
+<status status="PASS" start="2025-09-16T20:36:28.195830" elapsed="2.007741"/>
 </kw>
-<kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2025-09-16T20:33:17.873943" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<arg>leave</arg>
-<doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2025-09-16T20:33:17.873943" elapsed="0.004468"/>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2025-09-16T20:36:30.204687" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>Hello world!</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2025-09-16T20:36:30.204687" elapsed="0.007331"/>
 </kw>
-<status status="PASS" start="2025-09-16T20:33:13.542119" elapsed="4.337462"/>
+<status status="PASS" start="2025-09-16T20:36:26.037005" elapsed="4.178179"/>
 </test>
-<status status="PASS" start="2025-09-16T20:33:13.034423" elapsed="4.847833"/>
+<status status="PASS" start="2025-09-16T20:36:25.568012" elapsed="4.658142"/>
 </suite>
 <statistics>
 <total>
