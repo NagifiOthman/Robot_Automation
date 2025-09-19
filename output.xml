@@ -1,75 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-16T21:11:09.197927" rpa="false" schemaversion="5">
-<suite id="s1" name="Frames" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\Frames.robot">
-<test id="s1-t1" name="Handling Frames" line="5">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-19T12:51:53.614735" rpa="false" schemaversion="5">
+<suite id="s1" name="tabbedWindows" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\tabbedWindows.robot">
+<test id="s1-t1" name="Handling Tabbed windows" line="5">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-19T12:51:54.143278" elapsed="0.000997"/>
+</kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-16T21:11:09.728267" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/frames.php'.</msg>
-<arg>https://www.tutorialspoint.com/selenium/practice/frames.php</arg>
+<msg time="2025-09-19T12:51:54.146270" level="INFO">Opening browser 'chrome' to base url 'https://vinothqaacademy.com/multiple-windows/'.</msg>
+<arg>https://vinothqaacademy.com/multiple-windows/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-16T21:11:09.728267" elapsed="2.832939"/>
+<status status="PASS" start="2025-09-19T12:51:54.145272" elapsed="3.973394"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-16T21:11:12.562202" elapsed="0.048428"/>
+<status status="PASS" start="2025-09-19T12:51:58.119661" elapsed="1.061748"/>
 </kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2025-09-16T21:11:12.613219" level="INFO">Selecting frame 'xpath:/html/body/main/div/div/div[2]/iframe[1]'.</msg>
-<arg>xpath:/html/body/main/div/div/div[2]/iframe[1]</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2025-09-16T21:11:12.612069" elapsed="0.048222"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-09-16T21:11:12.661318" level="INFO">Clicking link '/selenium/index.htm'.</msg>
-<arg>/selenium/index.htm</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-16T21:11:12.660291" elapsed="0.226579"/>
-</kw>
-<kw name="Unselect Frame" owner="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" start="2025-09-16T21:11:12.887867" elapsed="0.005890"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-16T21:11:14.904393" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-16T21:11:12.894800" elapsed="2.011590"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-19T12:51:59.182908" level="INFO">Clicking element 'xpath://*[@id="button1"]'.</msg>
+<arg>xpath://*[@id="button1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-19T12:51:59.181409" elapsed="2.255245"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
-<arg>MAIN</arg>
+<arg>title:Demo Site – WebTable – Vinoth Tech Solutions</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2025-09-16T21:11:14.907386" elapsed="0.202131"/>
+<status status="PASS" start="2025-09-19T12:52:01.437895" elapsed="13.217056"/>
 </kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2025-09-16T21:11:15.112689" level="INFO">Selecting frame 'xpath:/html/body/main/div/div/div[2]/iframe[2]'.</msg>
-<arg>xpath:/html/body/main/div/div/div[2]/iframe[2]</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2025-09-16T21:11:15.111691" elapsed="0.086302"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-19T12:52:14.656100" level="INFO">Clicking element 'xpath://*[@id="addBtn"]'.</msg>
+<arg>xpath://*[@id="addBtn"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-19T12:52:14.656100" elapsed="2.087720"/>
 </kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>css=a[href="/selenium/index.htm"]</arg>
-<arg>5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-16T21:11:15.199053" elapsed="0.035502"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>css=a[href="/selenium/index.htm"]</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-09-16T21:11:15.235554" elapsed="0.801509"/>
-</kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-09-16T21:11:16.039058" level="INFO">Clicking link '/selenium/index.htm'.</msg>
-<arg>/selenium/index.htm</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-16T21:11:16.038061" elapsed="0.347644"/>
-</kw>
-<kw name="Unselect Frame" owner="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" start="2025-09-16T21:11:16.386702" elapsed="0.116241"/>
-</kw>
-<status status="PASS" start="2025-09-16T21:11:09.726220" elapsed="6.777721"/>
+<status status="PASS" start="2025-09-19T12:51:54.140286" elapsed="22.604530"/>
 </test>
-<status status="PASS" start="2025-09-16T21:11:09.208897" elapsed="7.299032"/>
+<status status="PASS" start="2025-09-19T12:51:53.622036" elapsed="23.124214"/>
 </suite>
 <statistics>
 <total>
@@ -78,7 +46,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Frames" id="s1" pass="1" fail="0" skip="0">Frames</stat>
+<stat name="tabbedWindows" id="s1" pass="1" fail="0" skip="0">tabbedWindows</stat>
 </suite>
 </statistics>
 <errors>
