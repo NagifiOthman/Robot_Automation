@@ -1,43 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-19T12:51:53.614735" rpa="false" schemaversion="5">
-<suite id="s1" name="tabbedWindows" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\tabbedWindows.robot">
-<test id="s1-t1" name="Handling Tabbed windows" line="5">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-19T13:02:00.815701" rpa="false" schemaversion="5">
+<suite id="s1" name="mulripleBrowsers" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\mulripleBrowsers.robot">
+<test id="s1-t1" name="Handling Multiple windows" line="5">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>1</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-09-19T12:51:54.143278" elapsed="0.000997"/>
+<status status="PASS" start="2025-09-19T13:02:01.324481" elapsed="0.000000"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-19T12:51:54.146270" level="INFO">Opening browser 'chrome' to base url 'https://vinothqaacademy.com/multiple-windows/'.</msg>
-<arg>https://vinothqaacademy.com/multiple-windows/</arg>
+<msg time="2025-09-19T13:02:01.326840" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-19T12:51:54.145272" elapsed="3.973394"/>
+<status status="PASS" start="2025-09-19T13:02:01.325817" elapsed="3.497797"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-19T12:51:58.119661" elapsed="1.061748"/>
+<status status="PASS" start="2025-09-19T13:02:04.824891" elapsed="1.081690"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-19T12:51:59.182908" level="INFO">Clicking element 'xpath://*[@id="button1"]'.</msg>
-<arg>xpath://*[@id="button1"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-19T12:51:59.181409" elapsed="2.255245"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-19T13:02:06.917962" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-19T13:02:05.906581" elapsed="1.011381"/>
 </kw>
-<kw name="Switch Window" owner="SeleniumLibrary">
-<arg>title:Demo Site – WebTable – Vinoth Tech Solutions</arg>
-<doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2025-09-19T12:52:01.437895" elapsed="13.217056"/>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-19T13:02:06.919215" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
+<arg>https://www.bing.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-19T13:02:06.919215" elapsed="3.032191"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-19T12:52:14.656100" level="INFO">Clicking element 'xpath://*[@id="addBtn"]'.</msg>
-<arg>xpath://*[@id="addBtn"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-19T12:52:14.656100" elapsed="2.087720"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-19T13:02:09.952740" elapsed="1.431969"/>
 </kw>
-<status status="PASS" start="2025-09-19T12:51:54.140286" elapsed="22.604530"/>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-09-19T13:02:11.384709" elapsed="0.001129"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-19T13:02:12.398083" level="INFO">${title1} = Google</msg>
+<var>${title1}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-19T13:02:11.385838" elapsed="1.012245"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-19T13:02:12.399333" elapsed="0.001074"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-19T13:02:13.412818" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-19T13:02:12.400407" elapsed="1.012411"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-09-19T13:02:13.414269" elapsed="0.000000"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-19T13:02:14.428017" level="INFO">${title2} = Recherche – Microsoft Bing</msg>
+<var>${title2}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-19T13:02:13.418602" elapsed="1.009415"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-19T13:02:14.429286" elapsed="0.001041"/>
+</kw>
+<status status="PASS" start="2025-09-19T13:02:01.322998" elapsed="13.107329"/>
 </test>
-<status status="PASS" start="2025-09-19T12:51:53.622036" elapsed="23.124214"/>
+<status status="PASS" start="2025-09-19T13:02:00.824467" elapsed="13.608041"/>
 </suite>
 <statistics>
 <total>
@@ -46,7 +84,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="tabbedWindows" id="s1" pass="1" fail="0" skip="0">tabbedWindows</stat>
+<stat name="mulripleBrowsers" id="s1" pass="1" fail="0" skip="0">mulripleBrowsers</stat>
 </suite>
 </statistics>
 <errors>
