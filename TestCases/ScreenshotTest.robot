@@ -8,5 +8,7 @@ Screenshots Test
     Maximize Browser Window
      Input Text       name:username     lakhssass
     Input Text        name:password     lancii
+
+    Capture Element Screenshot    xpath://*[@id="app"]/div[1]/div/div[1]/div/div[1]/img   
    
 
