@@ -1,62 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-20T22:18:42.466474" rpa="false" schemaversion="5">
-<suite id="s1" name="UserdefinedKeywords" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\UserdefinedKeywords.robot">
-<test id="s1-t1" name="Creating user_defined_keywords" line="11">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-20T22:46:08.962108" rpa="false" schemaversion="5">
+<suite id="s1" name="Scrolling" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\Scrolling.robot">
+<test id="s1-t1" name="Scorlling test" line="5">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>1</arg>
+<arg>3</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-09-20T22:18:42.966144" elapsed="0.001108"/>
+<status status="PASS" start="2025-09-20T22:46:09.478982" elapsed="0.000000"/>
 </kw>
-<kw name="Launch Browser" owner="resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-20T22:18:42.970414" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<arg>${appurl}</arg>
-<arg>${appbrowser}</arg>
+<msg time="2025-09-20T22:46:09.480997" level="INFO">Opening browser 'chrome' to base url 'https://www.worldometers.info/geography/alphabetical-list-of-countries/'.</msg>
+<arg>https://www.worldometers.info/geography/alphabetical-list-of-countries/</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-20T22:18:42.969339" elapsed="3.762501"/>
+<status status="PASS" start="2025-09-20T22:46:09.479976" elapsed="6.812828"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-20T22:18:46.731840" elapsed="1.077072"/>
+<status status="PASS" start="2025-09-20T22:46:16.293934" elapsed="5.134722"/>
 </kw>
-<kw name="Get Title" owner="SeleniumLibrary">
-<msg time="2025-09-20T22:18:48.842206" level="INFO">${title} = OrangeHRM</msg>
-<var>${title}</var>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-09-20T22:18:47.809909" elapsed="1.032297"/>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-09-20T22:46:21.431701" level="INFO">Executing JavaScript:
+window.scrollTo(0,document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-09-20T22:46:21.430651" elapsed="12.157226"/>
 </kw>
-<return>
-<value>${title}</value>
-<status status="PASS" start="2025-09-20T22:18:48.843205" elapsed="0.000000"/>
-</return>
-<msg time="2025-09-20T22:18:48.844201" level="INFO">${pageTitle} = OrangeHRM</msg>
-<var>${pageTitle}</var>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<status status="PASS" start="2025-09-20T22:18:42.968309" elapsed="5.876891"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-20T22:46:34.600298" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-20T22:46:33.588784" elapsed="1.012512"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${pageTitle}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-20T22:18:48.848190" elapsed="0.002993"/>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-09-20T22:46:34.604773" level="INFO">Executing JavaScript:
+window.scrollTo(0,-document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-09-20T22:46:34.603718" elapsed="3.030550"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-20T22:18:48.853562" level="INFO">Typing text 'lakhssass' into text field 'name:username'.</msg>
-<arg>name:username</arg>
-<arg>lakhssass</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-20T22:18:48.852181" elapsed="3.204766"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-20T22:18:52.059004" level="INFO">Typing text 'lancii' into text field 'name:password'.</msg>
-<arg>name:password</arg>
-<arg>lancii</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-20T22:18:52.059004" elapsed="3.149966"/>
-</kw>
-<status status="PASS" start="2025-09-20T22:18:42.964083" elapsed="12.247879"/>
+<status status="PASS" start="2025-09-20T22:46:09.475427" elapsed="28.160098"/>
 </test>
-<status status="PASS" start="2025-09-20T22:18:42.473086" elapsed="12.740256"/>
+<status status="PASS" start="2025-09-20T22:46:08.969405" elapsed="28.670529"/>
 </suite>
 <statistics>
 <total>
@@ -65,10 +51,9 @@
 <tag>
 </tag>
 <suite>
-<stat name="UserdefinedKeywords" id="s1" pass="1" fail="0" skip="0">UserdefinedKeywords</stat>
+<stat name="Scrolling" id="s1" pass="1" fail="0" skip="0">Scrolling</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-09-20T22:18:42.960963" level="WARN">Error in file 'c:\Users\onagi\OneDrive\Documents\Automation_Test_project\Resources\resources.robot' on line 10: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
