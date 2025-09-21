@@ -11,4 +11,4 @@ Mouse Actions
 
 
     Double Click Element    xpath://*[@id="dblclick"]
-    Drag And Drop    xpath://*[@id="draggableElement"]   xpath://*[@id="droppableElement"]
+    Drag And Drop    id:draggableElement   id:droppableElement
