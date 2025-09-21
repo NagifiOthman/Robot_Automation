@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-20T20:37:13.986745" rpa="false" schemaversion="5">
-<suite id="s1" name="ScreenshotTest" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\ScreenshotTest.robot">
-<test id="s1-t1" name="Screenshots Test" line="5">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-20T21:52:35.626616" rpa="false" schemaversion="5">
+<suite id="s1" name="MouseAcrions" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\MouseAcrions.robot">
+<test id="s1-t1" name="Mouse Actions" line="5">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>1</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-09-20T20:37:14.557530" elapsed="0.001121"/>
+<status status="PASS" start="2025-09-20T21:52:36.204525" elapsed="0.000997"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-20T20:37:14.559666" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<msg time="2025-09-20T21:52:36.206565" level="INFO">Opening browser 'chrome' to base url 'https://vinothqaacademy.com/mouse-event/'.</msg>
+<arg>https://vinothqaacademy.com/mouse-event/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-20T20:37:14.559666" elapsed="3.563740"/>
+<status status="PASS" start="2025-09-20T21:52:36.205522" elapsed="3.832738"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-20T20:37:18.124529" elapsed="1.044541"/>
+<status status="PASS" start="2025-09-20T21:52:40.038260" elapsed="1.057912"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-20T20:37:19.170904" level="INFO">Typing text 'lakhssass' into text field 'name:username'.</msg>
-<arg>name:username</arg>
-<arg>lakhssass</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-20T20:37:19.169909" elapsed="3.136274"/>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath://*[@id="rightclick"]</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-20T21:52:41.097170" elapsed="2.318481"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-20T20:37:22.308373" level="INFO">Typing text 'lancii' into text field 'name:password'.</msg>
-<arg>name:password</arg>
-<arg>lancii</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-20T20:37:22.307372" elapsed="3.140163"/>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-20T21:52:43.416892" level="INFO">Double clicking element 'xpath://*[@id="dblclick"]'.</msg>
+<arg>xpath://*[@id="dblclick"]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-20T21:52:43.416892" elapsed="2.317277"/>
 </kw>
-<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
-<msg time="2025-09-20T20:37:27.556556" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
-<arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[1]/img</arg>
-<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
-<status status="PASS" start="2025-09-20T20:37:25.447535" elapsed="2.110284"/>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>xpath://*[@id="draggableElement"]</arg>
+<arg>xpath://*[@id="droppableElement"]</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-09-20T21:52:45.734169" elapsed="3.625697"/>
 </kw>
-<status status="PASS" start="2025-09-20T20:37:14.555319" elapsed="13.002500"/>
+<status status="PASS" start="2025-09-20T21:52:36.200197" elapsed="13.159669"/>
 </test>
-<status status="PASS" start="2025-09-20T20:37:13.995793" elapsed="13.564053"/>
+<status status="PASS" start="2025-09-20T21:52:35.634123" elapsed="13.728921"/>
 </suite>
 <statistics>
 <total>
@@ -49,7 +46,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="ScreenshotTest" id="s1" pass="1" fail="0" skip="0">ScreenshotTest</stat>
+<stat name="MouseAcrions" id="s1" pass="1" fail="0" skip="0">MouseAcrions</stat>
 </suite>
 </statistics>
 <errors>
