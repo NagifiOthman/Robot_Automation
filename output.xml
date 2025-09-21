@@ -1,58 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-20T19:27:23.034937" rpa="false" schemaversion="5">
-<suite id="s1" name="NavigationKeywords" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\NavigationKeywords.robot">
-<test id="s1-t1" name="NavigationKeywords Test" line="5">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-20T19:27:23.653394" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
-<arg>https://www.google.com/</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-20T19:27:23.653394" elapsed="6.393394"/>
-</kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-09-20T19:27:30.057506" level="INFO">${loc1} = https://www.google.com/</msg>
-<var>${loc1}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-09-20T19:27:30.048117" elapsed="0.009389"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${loc1}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-20T19:27:30.058515" elapsed="0.001006"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-20T19:27:31.073127" level="INFO">Slept 1 second.</msg>
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-20T20:34:28.043430" rpa="false" schemaversion="5">
+<suite id="s1" name="ScreenshotTest" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\ScreenshotTest.robot">
+<test id="s1-t1" name="Screenshots Test" line="5">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-20T19:27:30.061517" elapsed="1.012582"/>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-20T20:34:28.527866" elapsed="0.001014"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-20T19:27:31.075417" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
-<arg>https://www.bing.com/</arg>
+<msg time="2025-09-20T20:34:28.529886" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-20T19:27:31.075417" elapsed="2.580323"/>
+<status status="PASS" start="2025-09-20T20:34:28.528880" elapsed="3.545600"/>
 </kw>
-<kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-09-20T19:27:33.666150" level="INFO">${loc2} = https://www.bing.com/</msg>
-<var>${loc2}</var>
-<doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-09-20T19:27:33.656750" elapsed="0.010469"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-20T20:34:32.074480" elapsed="1.049583"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${loc2}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-20T19:27:33.668232" elapsed="0.000000"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-20T20:34:33.125169" level="INFO">Typing text 'lakhssass' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>lakhssass</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-20T20:34:33.124063" elapsed="3.135976"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-20T19:27:34.677993" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-20T19:27:33.669249" elapsed="1.010738"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-20T20:34:36.263996" level="INFO">Typing text 'lancii' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>lancii</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-20T20:34:36.262999" elapsed="3.126227"/>
 </kw>
-<status status="PASS" start="2025-09-20T19:27:23.651198" elapsed="11.035771"/>
+<status status="PASS" start="2025-09-20T20:34:28.525784" elapsed="10.864551"/>
 </test>
-<status status="PASS" start="2025-09-20T19:27:23.042836" elapsed="11.651114"/>
+<status status="PASS" start="2025-09-20T20:34:28.049892" elapsed="11.342655"/>
 </suite>
 <statistics>
 <total>
@@ -61,7 +43,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="NavigationKeywords" id="s1" pass="1" fail="0" skip="0">NavigationKeywords</stat>
+<stat name="ScreenshotTest" id="s1" pass="1" fail="0" skip="0">ScreenshotTest</stat>
 </suite>
 </statistics>
 <errors>
