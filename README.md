@@ -1,7 +1,7 @@
-# 🐍 Python Automation with Robot Framework & SeleniumLibrary  
+# 🤖 Python Automation with Robot Framework  
 
 <p align="center">  
-  <img src="https://www.selenium.dev/images/selenium_logo_square_green.png" alt="Selenium Logo" width="120"/>  
+  <img src="https://raw.githubusercontent.com/robotframework/visual-identity/refs/heads/master/Logo/robot-framework-logo.png" alt="Robot Framework Logo" width="100"/>  
 </p>  
 
 <p align="center">  
@@ -44,11 +44,9 @@ It demonstrates industry-standard practices such as **Page Object Model (POM)**,
 - **DatabaseLibrary**  
 - **PyMySQL**  
 - **PostgreSQL**  
-- **DataDriver**  
-- **ExcelLibrary**  
+- **DataDriver**   
 - **Pabot (Parallel Execution)**  
 - **Jenkins / GitHub Actions**  
 
 ---
-
 
