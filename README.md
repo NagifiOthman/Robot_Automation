@@ -38,6 +38,37 @@ It demonstrates industry-standard practices such as **Page Object Model (POM)**,
 
 ---
 
+## 🎥 Learning Path – Video Titles  
+
+Here’s the progression of topics I followed (based on the video series):  
+
+1. Introduction to Robot Framework  
+2. Installation of Python, PIP, and Robot Framework  
+3. Robot Framework Architecture & Installation of Selenium Library  
+4. First Test with Robot Framework and Selenium  
+5. Test Teardown and Setup in Robot Framework  
+6. Locators in Selenium (ID, Name, CSS, XPath)  
+7. Robot Framework Test Tags  
+8. Browser Commands with SeleniumLibrary  
+9. Input Text & Click Button Examples  
+10. Waits in Robot Framework (Implicit, Explicit)  
+11. Screenshot in Robot Framework Selenium Tests  
+12. Page Title & Page Should Contain Element  
+13. Mouse and Keyboard Actions  
+14. Handling Alerts and Pop-ups  
+15. Handling Radio Buttons and Checkboxes  
+16. Handling Dropdowns  
+17. Page Object Model (POM) with Robot Framework  
+18. Data Driven Testing Using Script in Robot Framework  
+19. Data Driven Testing Using Excel & CSV Files in Robot Framework  
+20. Database Testing with Robot Framework (PostgreSQL Integration)  
+21. Setup and Teardown at Suite and Test Level  
+22. Parallel Test Execution with Pabot  
+23. Running Tests in Headless Mode (Chrome & Firefox)  
+24. Jenkins CI/CD Integration with Robot Framework  
+
+
+
 ## 🛠️ Tech Stack  
 
 - **Python 3.x**  
@@ -49,4 +80,6 @@ It demonstrates industry-standard practices such as **Page Object Model (POM)**,
 - **Pabot (Parallel Execution)**  
 - **Jenkins / GitHub Actions**  
 
+
+---
 
