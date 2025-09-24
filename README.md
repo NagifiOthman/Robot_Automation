@@ -1,8 +1,9 @@
 # 🤖 Python Automation with Robot Framework  
 
-<p align="center">  
-  <img src="https://raw.githubusercontent.com/robotframework/visual-identity/refs/heads/master/Logo/robot-framework-logo.png" alt="Robot Framework Logo" width="200"/>  
-</p>  
+<p align="center">
+  <img src="https://raw.githubusercontent.com/robotframework/visual-identity/master/Logo/robot-framework-logo.png" alt="Robot Framework Logo" width="200"/>
+</p>
+
 
 <p align="center">  
   <img src="https://img.shields.io/badge/Python-3.x-blue"/>  
