@@ -1,62 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-23T20:48:22.017181" rpa="false" schemaversion="5">
-<suite id="s1" name="Html  tables" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\web\Html _tables.robot">
-<test id="s1-t1" name="Handle HTML Tables" line="8">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-24T16:35:20.200589" rpa="false" schemaversion="5">
+<suite id="s1" name="Data Driven" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\data_driven.robot">
+<kw name="Open my Browser" owner="login_resources" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-24T16:35:20.711869" elapsed="0.000000"/>
+</kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-23T20:48:22.536764" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
-<arg>https://testautomationpractice.blogspot.com/</arg>
-<arg>chrome</arg>
+<msg time="2025-09-24T16:35:20.713379" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-23T20:48:22.535662" elapsed="2.595900"/>
+<status status="PASS" start="2025-09-24T16:35:20.711869" elapsed="3.811681"/>
 </kw>
-<kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2025-09-23T20:48:25.157819" level="INFO">${row_count} = 7</msg>
-<var>${row_count}</var>
-<arg>xpath://table[@name='BookTable']/tbody/tr</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2025-09-23T20:48:25.132557" elapsed="0.025262"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-24T16:35:24.524057" elapsed="1.052494"/>
 </kw>
-<kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2025-09-23T20:48:25.175511" level="INFO">${col_count} = 4</msg>
-<var>${col_count}</var>
-<arg>xpath://table[@name='BookTable']/tbody/tr[2]/td</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2025-09-23T20:48:25.159328" elapsed="0.016183"/>
+<status status="PASS" start="2025-09-24T16:35:20.709333" elapsed="4.868087"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Number of rows: ${row_count}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-23T20:48:25.176522" elapsed="0.001155"/>
+<test id="s1-t1" name="Right user wrong pass" line="20">
+<kw name="Invalid login">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-24T16:35:25.579334" elapsed="0.000000"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Number of columns: ${col_count}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-23T20:48:25.178678" elapsed="0.001258"/>
+<kw name="Input username" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:35:25.580342" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:35:25.580342" elapsed="3.147321"/>
 </kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T20:48:25.222786" level="INFO">${data} = Selenium</msg>
-<var>${data}</var>
-<arg>xpath://table[@name='BookTable']/tbody/tr[5]/td[3]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T20:48:25.180944" elapsed="0.043350"/>
+<arg>${username}</arg>
+<status status="PASS" start="2025-09-24T16:35:25.580342" elapsed="3.147321"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Data at row 3, column 5: ${data}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-23T20:48:25.224294" elapsed="0.003315"/>
+<kw name="Input pwd" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:35:28.730654" level="INFO">Typing text 'admin' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:35:28.729657" elapsed="3.233856"/>
 </kw>
-<kw name="Table Cell Should Contain" owner="SeleniumLibrary">
-<msg time="2025-09-23T20:48:25.374273" level="INFO">Table cell contains 'Selenium'.</msg>
-<arg>xpath://table[@name='BookTable']</arg>
-<arg>5</arg>
-<arg>3</arg>
-<arg>Selenium</arg>
-<doc>Verifies table cell contains text ``expected``.</doc>
-<status status="PASS" start="2025-09-23T20:48:25.228690" elapsed="0.145583"/>
+<arg>${password}</arg>
+<status status="PASS" start="2025-09-24T16:35:28.728660" elapsed="3.234853"/>
 </kw>
-<status status="PASS" start="2025-09-23T20:48:22.533113" elapsed="2.842205"/>
+<kw name="Click Login Button" owner="login_resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:35:31.965358" level="INFO">Clicking button 'xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:35:31.964282" elapsed="5.193441"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:35:31.964282" elapsed="5.193441"/>
+</kw>
+<kw name="Error message should be visible" owner="login_resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:35:39.192003" level="INFO">Current page contains text 'Invalid credentials'.</msg>
+<arg>Invalid credentials</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-09-24T16:35:37.158822" elapsed="2.033181"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:35:37.157723" elapsed="2.034280"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin</arg>
+<status status="PASS" start="2025-09-24T16:35:25.578830" elapsed="13.614711"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:35:25.577864" elapsed="13.615677"/>
 </test>
-<status status="PASS" start="2025-09-23T20:48:22.028969" elapsed="3.347358"/>
+<kw name="Close Browsers" owner="login_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-09-24T16:35:39.196406" elapsed="3.184936"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:35:39.196406" elapsed="3.184936"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:35:20.209462" elapsed="22.171880"/>
 </suite>
 <statistics>
 <total>
@@ -65,7 +89,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Html  tables" id="s1" pass="1" fail="0" skip="0">Html  tables</stat>
+<stat name="Data Driven" id="s1" pass="1" fail="0" skip="0">Data Driven</stat>
 </suite>
 </statistics>
 <errors>
