@@ -44,11 +44,9 @@ It demonstrates industry-standard practices such as **Page Object Model (POM)**,
 - **Robot Framework**  
 - **SeleniumLibrary**  
 - **DatabaseLibrary**  
-- **PyMySQL**  
-- **PostgreSQL**  
+- **PyMySQL**   
 - **DataDriver**   
 - **Pabot (Parallel Execution)**  
 - **Jenkins / GitHub Actions**  
 
----
 
