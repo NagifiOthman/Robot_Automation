@@ -1,41 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-23T20:37:28.420392" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-23T20:48:22.017181" rpa="false" schemaversion="5">
 <suite id="s1" name="Html  tables" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\web\Html _tables.robot">
 <test id="s1-t1" name="Handle HTML Tables" line="8">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-23T20:37:29.029579" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<msg time="2025-09-23T20:48:22.536764" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
 <arg>https://testautomationpractice.blogspot.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-23T20:37:29.028582" elapsed="6.516137"/>
+<status status="PASS" start="2025-09-23T20:48:22.535662" elapsed="2.595900"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2025-09-23T20:37:35.570648" level="INFO">${row_count} = 7</msg>
+<msg time="2025-09-23T20:48:25.157819" level="INFO">${row_count} = 7</msg>
 <var>${row_count}</var>
 <arg>xpath://table[@name='BookTable']/tbody/tr</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2025-09-23T20:37:35.545828" elapsed="0.025251"/>
+<status status="PASS" start="2025-09-23T20:48:25.132557" elapsed="0.025262"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2025-09-23T20:37:35.594370" level="INFO">${col_count} = 0</msg>
+<msg time="2025-09-23T20:48:25.175511" level="INFO">${col_count} = 4</msg>
 <var>${col_count}</var>
-<arg>xpath://table[@name='BookTable']/tbody/th</arg>
+<arg>xpath://table[@name='BookTable']/tbody/tr[2]/td</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2025-09-23T20:37:35.572081" elapsed="0.023643"/>
+<status status="PASS" start="2025-09-23T20:48:25.159328" elapsed="0.016183"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Number of rows: ${row_count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-23T20:37:35.596736" elapsed="0.000000"/>
+<status status="PASS" start="2025-09-23T20:48:25.176522" elapsed="0.001155"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Number of rows: ${col_count}</arg>
+<arg>Number of columns: ${col_count}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-23T20:37:35.598188" elapsed="0.001010"/>
+<status status="PASS" start="2025-09-23T20:48:25.178678" elapsed="0.001258"/>
 </kw>
-<status status="PASS" start="2025-09-23T20:37:29.026562" elapsed="6.573663"/>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T20:48:25.222786" level="INFO">${data} = Selenium</msg>
+<var>${data}</var>
+<arg>xpath://table[@name='BookTable']/tbody/tr[5]/td[3]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T20:48:25.180944" elapsed="0.043350"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Data at row 3, column 5: ${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-23T20:48:25.224294" elapsed="0.003315"/>
+</kw>
+<kw name="Table Cell Should Contain" owner="SeleniumLibrary">
+<msg time="2025-09-23T20:48:25.374273" level="INFO">Table cell contains 'Selenium'.</msg>
+<arg>xpath://table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>3</arg>
+<arg>Selenium</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="PASS" start="2025-09-23T20:48:25.228690" elapsed="0.145583"/>
+</kw>
+<status status="PASS" start="2025-09-23T20:48:22.533113" elapsed="2.842205"/>
 </test>
-<status status="PASS" start="2025-09-23T20:37:28.432015" elapsed="7.169223"/>
+<status status="PASS" start="2025-09-23T20:48:22.028969" elapsed="3.347358"/>
 </suite>
 <statistics>
 <total>
