@@ -51,27 +51,27 @@ Here’s the progression of topics I followed (based on the video series):
 7. Robot Framework Test Tags  
 8. Browser Commands with SeleniumLibrary  
 9. Input Text & Click Button Examples  
-10. Waits in Robot Framework (Implicit, Explicit)  
-11. Screenshot in Robot Framework Selenium Tests  
-12. Page Title & Page Should Contain Element  
-13. Mouse and Keyboard Actions  
-14. Handling Alerts and Pop-ups  
-15. Handling Radio Buttons and Checkboxes  
-16. Handling Dropdowns  
-17. Page Object Model (POM) with Robot Framework  
-18. Data Driven Testing Using Script in Robot Framework  
-19. Data Driven Testing Using Excel & CSV Files in Robot Framework  
-20. Database Testing with Robot Framework (PostgreSQL Integration)  
-21. Setup and Teardown at Suite and Test Level  
-22. Parallel Test Execution with Pabot  
-23. Running Tests in Headless Mode (Chrome & Firefox)  
-24. Jenkins CI/CD Integration with Robot Framework  
+ 10. Waits in Robot Framework (Implicit, Explicit)  
+ 11. Screenshot in Robot Framework Selenium Tests  
+ 12. Page Title & Page Should Contain Element  
+ 13. Mouse and Keyboard Actions  
+ 14. Handling Alerts and Pop-ups  
+ 15. Handling Radio Buttons and Checkboxes  
+ 16. Handling Dropdowns  
+ 17. Page Object Model (POM) with Robot Framework  
+ 18. Data Driven Testing Using Script in Robot Framework  
+ 19. Data Driven Testing Using Excel & CSV Files in Robot Framework  
+ 20. Database Testing with Robot Framework (PostgreSQL Integration)  
+ 21. Setup and Teardown at Suite and Test Level  
+ 22. Parallel Test Execution with Pabot  
+ 23. Running Tests in Headless Mode (Chrome & Firefox)  
+ 24. Jenkins CI/CD Integration with Robot Framework  
 
 
 
 ## 🛠️ Tech Stack  
 
-- **Python 3.x**  
+- **Python 3.10.4**  
 - **Robot Framework**  
 - **SeleniumLibrary**  
 - **DatabaseLibrary**  
