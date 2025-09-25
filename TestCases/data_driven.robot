@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 Resource    ../Resources/login_resources.robot
 Suite Setup    Open my Browser
 Suite Teardown    Close Browsers
-Test Template    Invalid login 
+Test Template    Invalid login with empty password
 
 
 *** Test Cases ***    username    password
