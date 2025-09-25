@@ -1,78 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-25T14:01:50.777144" rpa="false" schemaversion="5">
-<suite id="s1" name="Page object model" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\Page_object_model.robot">
-<test id="s1-t1" name="LoginTest" line="13">
-<kw name="Open my Browser" owner="login_Keywords">
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>1</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-09-25T14:01:51.287452" elapsed="0.001039"/>
-</kw>
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-25T17:05:23.906627" rpa="false" schemaversion="5">
+<suite id="s1" name="RegistrationTest" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\RegistrationTest.robot">
+<test id="s1-t1" name="RegistrationTest" line="12">
+<kw name="Open my Browser" owner="register_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-25T14:01:51.288491" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<msg time="2025-09-25T17:05:24.424566" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-25T14:01:51.288491" elapsed="6.262608"/>
+<status status="PASS" start="2025-09-25T17:05:24.423509" elapsed="3.767862"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-25T14:01:57.551099" elapsed="1.065394"/>
+<status status="PASS" start="2025-09-25T17:05:28.192545" elapsed="0.040961"/>
 </kw>
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
-<status status="PASS" start="2025-09-25T14:01:51.286404" elapsed="7.330089"/>
+<status status="PASS" start="2025-09-25T17:05:24.422419" elapsed="3.811087"/>
 </kw>
-<kw name="Enter UserName" owner="login_Keywords">
+<kw name="Click Register Link" owner="register_keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:28.238808" level="INFO">Clicking link 'link:REGISTER'.</msg>
+<arg>${link_Reg}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T17:05:28.236531" elapsed="0.943851"/>
+</kw>
+<status status="PASS" start="2025-09-25T17:05:28.235532" elapsed="0.944850"/>
+</kw>
+<kw name="Enter FirstName" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T14:01:58.619953" level="INFO">Typing text 'lakhssass' into text field 'name:userName'.</msg>
-<arg>${login_username}</arg>
-<arg>${username}</arg>
+<msg time="2025-09-25T17:05:29.182412" level="INFO">Typing text 'Othman' into text field 'name:firstName'.</msg>
+<arg>${txt_firstName}</arg>
+<arg>${firstName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T14:01:58.618958" elapsed="3.166295"/>
+<status status="PASS" start="2025-09-25T17:05:29.181400" elapsed="0.161750"/>
 </kw>
-<arg>${user}</arg>
-<status status="PASS" start="2025-09-25T14:01:58.617836" elapsed="3.167417"/>
+<arg>Othman</arg>
+<status status="PASS" start="2025-09-25T17:05:29.181400" elapsed="0.161750"/>
 </kw>
-<kw name="Enter Password" owner="login_Keywords">
+<kw name="Enter LastName" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T14:02:01.789474" level="INFO">Typing text 'yessir' into text field 'name:password'.</msg>
-<arg>${login_password}</arg>
+<msg time="2025-09-25T17:05:29.346572" level="INFO">Typing text 'Nagifi' into text field 'name:lastName'.</msg>
+<arg>${txt_lastName}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T17:05:29.345310" elapsed="0.126636"/>
+</kw>
+<arg>Nagifi</arg>
+<status status="PASS" start="2025-09-25T17:05:29.344270" elapsed="0.128837"/>
+</kw>
+<kw name="Enter Phone" owner="register_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:29.475185" level="INFO">Typing text '1234567890' into text field 'name:phone'.</msg>
+<arg>${txt_phone}</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T17:05:29.474132" elapsed="0.110374"/>
+</kw>
+<arg>1234567890</arg>
+<status status="PASS" start="2025-09-25T17:05:29.473107" elapsed="0.112428"/>
+</kw>
+<kw name="Enter Email" owner="register_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:29.587641" level="INFO">Typing text 'othnag2020gmail.com' into text field 'name:userName'.</msg>
+<arg>${txt_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T17:05:29.586614" elapsed="0.133297"/>
+</kw>
+<arg>othnag2020gmail.com</arg>
+<status status="PASS" start="2025-09-25T17:05:29.585535" elapsed="0.135613"/>
+</kw>
+<kw name="Enter Address" owner="register_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:29.722216" level="INFO">Typing text 'Ottawa' into text field 'name:address1'.</msg>
+<arg>${txt_add1}</arg>
+<arg>${add1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T17:05:29.722216" elapsed="0.135977"/>
+</kw>
+<arg>Ottawa</arg>
+<status status="PASS" start="2025-09-25T17:05:29.722216" elapsed="0.137246"/>
+</kw>
+<kw name="Enter City" owner="register_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:29.862006" level="INFO">Typing text 'Ottawa' into text field 'name:city'.</msg>
+<arg>${txt_city}</arg>
+<arg>${city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T17:05:29.862006" elapsed="0.174088"/>
+</kw>
+<arg>Ottawa</arg>
+<status status="PASS" start="2025-09-25T17:05:29.860538" elapsed="0.176568"/>
+</kw>
+<kw name="Enter State" owner="register_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:30.039136" level="INFO">Typing text 'Ontario' into text field 'name:state'.</msg>
+<arg>${txt_state}</arg>
+<arg>${state}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T17:05:30.038110" elapsed="0.098916"/>
+</kw>
+<arg>Ontario</arg>
+<status status="PASS" start="2025-09-25T17:05:30.037106" elapsed="0.099920"/>
+</kw>
+<kw name="Enter Postal Code" owner="register_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:30.139310" level="INFO">Typing text 'K1N 9E5' into text field 'name:postalCode'.</msg>
+<arg>${txt_postCode }</arg>
+<arg>${postalCode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T17:05:30.139310" elapsed="0.208055"/>
+</kw>
+<arg>K1N 9E5</arg>
+<status status="PASS" start="2025-09-25T17:05:30.138279" elapsed="0.209086"/>
+</kw>
+<kw name="Select Country" owner="register_keywords">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:30.349405" level="INFO">Selecting options from selection list 'name:country' by label CANADA.</msg>
+<arg>${drp_country}</arg>
+<arg>${country}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-09-25T17:05:30.349405" elapsed="0.130724"/>
+</kw>
+<arg>CANADA</arg>
+<status status="PASS" start="2025-09-25T17:05:30.348409" elapsed="0.131720"/>
+</kw>
+<kw name="Enter username" owner="register_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:30.482591" level="INFO">Typing text 'lakhssass' into text field 'name:email'.</msg>
+<arg>${txt_userName}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T17:05:30.481591" elapsed="0.204808"/>
+</kw>
+<arg>lakhssass</arg>
+<status status="PASS" start="2025-09-25T17:05:30.481591" elapsed="0.205968"/>
+</kw>
+<kw name="Enter password" owner="register_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:30.689633" level="INFO">Typing text 'johnxyz' into text field 'name:password'.</msg>
+<arg>${txt_password}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T14:02:01.788248" elapsed="3.132171"/>
+<status status="PASS" start="2025-09-25T17:05:30.688607" elapsed="0.113531"/>
 </kw>
-<arg>${pwd}</arg>
-<status status="PASS" start="2025-09-25T14:02:01.787252" elapsed="3.133167"/>
+<arg>johnxyz</arg>
+<status status="PASS" start="2025-09-25T17:05:30.687559" elapsed="0.114579"/>
 </kw>
-<kw name="Click SignIn" owner="login_Keywords">
+<kw name="Enter comfirmed Password" owner="register_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T17:05:30.804652" level="INFO">Typing text 'johnxyz' into text field 'name:confirmPassword'.</msg>
+<arg>${txt_confirmedPassword }</arg>
+<arg>${cPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T17:05:30.803142" elapsed="0.192551"/>
+</kw>
+<arg>johnxyz</arg>
+<status status="PASS" start="2025-09-25T17:05:30.803142" elapsed="0.192551"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T17:05:33.006059" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T17:05:30.996689" elapsed="2.010879"/>
+</kw>
+<kw name="Click envoyer" owner="register_keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-25T14:02:04.923019" level="INFO">Clicking button 'xpath:/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[4]/td[2]/div/input'.</msg>
-<arg>${login_button}</arg>
+<msg time="2025-09-25T17:05:33.011770" level="INFO">Clicking button 'xpath://html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[17]/td/input'.</msg>
+<arg>${btn_submit}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T14:02:04.923019" elapsed="4.186589"/>
+<status status="PASS" start="2025-09-25T17:05:33.010564" elapsed="0.859484"/>
 </kw>
-<status status="PASS" start="2025-09-25T14:02:04.921864" elapsed="4.187744"/>
+<status status="PASS" start="2025-09-25T17:05:33.008569" elapsed="0.861479"/>
 </kw>
-<kw name="Verify Successful Login" owner="login_Keywords">
+<kw name="Verify Successful Registration" owner="register_keywords">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-09-25T14:02:10.126261" level="INFO">Page title is 'Welcome: Mercury Tours'.</msg>
-<arg>Welcome: Mercury Tours</arg>
+<msg time="2025-09-25T17:05:33.888031" level="INFO">Page title is 'Register: Mercury Tours'.</msg>
+<arg>Register: Mercury Tours</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-09-25T14:02:09.111773" elapsed="1.014488"/>
+<status status="PASS" start="2025-09-25T17:05:33.871059" elapsed="0.016972"/>
 </kw>
-<status status="PASS" start="2025-09-25T14:02:09.110775" elapsed="1.015486"/>
+<status status="PASS" start="2025-09-25T17:05:33.871059" elapsed="0.017968"/>
 </kw>
-<kw name="Close my browsers" owner="login_Keywords">
+<kw name="Close my browsers" owner="register_keywords">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-09-25T14:02:10.128674" elapsed="3.189740"/>
+<status status="PASS" start="2025-09-25T17:05:33.890247" elapsed="2.290894"/>
 </kw>
-<status status="PASS" start="2025-09-25T14:02:10.127655" elapsed="3.190759"/>
+<status status="PASS" start="2025-09-25T17:05:33.890247" elapsed="2.290894"/>
 </kw>
-<status status="PASS" start="2025-09-25T14:01:51.285127" elapsed="22.034538"/>
+<status status="PASS" start="2025-09-25T17:05:24.420144" elapsed="11.762241"/>
 </test>
-<status status="PASS" start="2025-09-25T14:01:50.785848" elapsed="22.535095"/>
+<status status="PASS" start="2025-09-25T17:05:23.915459" elapsed="12.268924"/>
 </suite>
 <statistics>
 <total>
@@ -81,7 +201,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Page object model" id="s1" pass="1" fail="0" skip="0">Page object model</stat>
+<stat name="RegistrationTest" id="s1" pass="1" fail="0" skip="0">RegistrationTest</stat>
 </suite>
 </statistics>
 <errors>
