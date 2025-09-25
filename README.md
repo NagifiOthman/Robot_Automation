@@ -4,12 +4,6 @@
   <img src="https://robotframework.org/img/RF.svg" alt="Robot Framework Logo" width="120"/>  
 </p>  
 
-<p align="center">  
-  <img src="https://img.shields.io/badge/Python-3.x-blue"/>  
-  <img src="https://img.shields.io/badge/RobotFramework-6.x-green"/>  
-  <img src="https://img.shields.io/badge/SeleniumLibrary-latest-brightgreen"/>  
-  <img src="https://img.shields.io/badge/License-MIT-yellow"/>  
-</p>  
 
 
 🚀 A complete automation testing framework using **Robot Framework** with the **SeleniumLibrary**,  
