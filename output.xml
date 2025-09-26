@@ -1,209 +1,3420 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-25T17:05:23.906627" rpa="false" schemaversion="5">
-<suite id="s1" name="RegistrationTest" source="c:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\RegistrationTest.robot">
-<test id="s1-t1" name="RegistrationTest" line="12">
-<kw name="Open my Browser" owner="register_keywords">
+<robot generator="Rebot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-25T22:36:45.170759" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Alerts" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\alerts.robot">
+<test id="s1-s1-t1" name="Handling alerts" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:24.424566" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
-<arg>${SiteUrl}</arg>
-<arg>${Browser}</arg>
+<msg time="2025-09-25T22:32:03.451252" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/alerts.php'.</msg>
+<arg>https://www.tutorialspoint.com/selenium/practice/alerts.php</arg>
+<arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-25T17:05:24.423509" elapsed="3.767862"/>
+<status status="PASS" start="2025-09-25T22:32:03.451252" elapsed="4.661699"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:08.114019" level="INFO">Clicking element 'xpath:/html/body/main/div/div/div[2]/div[1]/button'.</msg>
+<arg>xpath:/html/body/main/div/div/div[2]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:08.112951" elapsed="0.130574"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:32:10.253937" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:32:08.244914" elapsed="2.009023"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:10.255080" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>Hello world!</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2025-09-25T22:32:10.253937" elapsed="0.007452"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:03.449160" elapsed="6.812229"/>
+</test>
+<status status="PASS" start="2025-09-25T22:32:02.837000" elapsed="6.812000"/>
+</suite>
+<suite id="s1-s2" name="Data Driven" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\data_driven.robot">
+<kw name="Open my Browser" owner="login_resources" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:32:03.459201" elapsed="0.000998"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:03.461196" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:03.460199" elapsed="5.950929"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-09-25T17:05:28.192545" elapsed="0.040961"/>
+<status status="PASS" start="2025-09-25T22:32:09.412434" elapsed="1.044581"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:03.456710" elapsed="7.000305"/>
+</kw>
+<test id="s1-s2-t1" name="Right user empty pass" line="14">
+<kw name="Invalid login with empty password">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:32:10.461004" elapsed="0.001354"/>
+</kw>
+<kw name="Input username" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:10.464510" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:10.463493" elapsed="3.123715"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-09-25T22:32:10.462358" elapsed="3.124850"/>
+</kw>
+<kw name="Input pwd" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:13.590297" level="INFO">Typing text '' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:13.589174" elapsed="3.131302"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-09-25T22:32:13.588176" elapsed="3.132300"/>
+</kw>
+<kw name="Click Login Button" owner="login_resources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:16.722639" level="INFO">Clicking button 'xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:16.721565" elapsed="5.261530"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:16.720476" elapsed="5.263464"/>
+</kw>
+<kw name="Error message should be visible for empty password" owner="login_resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:24.015400" level="INFO">Current page contains text 'Required'.</msg>
+<arg>Required</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-09-25T22:32:21.984935" elapsed="2.031462"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:21.983940" elapsed="2.032457"/>
+</kw>
+<arg>Admin</arg>
+<arg>${EMPTY}</arg>
+<status status="PASS" start="2025-09-25T22:32:10.459009" elapsed="13.558386"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:10.457015" elapsed="13.560380"/>
+</test>
+<test id="s1-s2-t2" name="Right user wrong pass" line="20">
+<kw name="Invalid login with empty password">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:32:24.021384" elapsed="0.000998"/>
+</kw>
+<kw name="Input username" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:24.024376" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:24.023378" elapsed="3.128513"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-09-25T22:32:24.022382" elapsed="3.129509"/>
+</kw>
+<kw name="Input pwd" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:27.154288" level="INFO">Typing text 'admin' into text field 'name:password'.</msg>
+<msg time="2025-09-25T22:32:29.401166" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:32:29.401166" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-25T22:32:27.153291" elapsed="2.254925">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<arg>${password}</arg>
+<status status="FAIL" start="2025-09-25T22:32:27.151891" elapsed="2.256325">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<kw name="Click Login Button" owner="login_resources">
+<status status="NOT RUN" start="2025-09-25T22:32:29.409403" elapsed="0.000000"/>
+</kw>
+<kw name="Error message should be visible for empty password" owner="login_resources">
+<status status="NOT RUN" start="2025-09-25T22:32:29.409403" elapsed="0.000000"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin</arg>
+<status status="FAIL" start="2025-09-25T22:32:24.019389" elapsed="5.391037">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<status status="FAIL" start="2025-09-25T22:32:24.018392" elapsed="5.392034">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</test>
+<test id="s1-s2-t3" name="Wrong user wrong pass" line="23">
+<kw name="Invalid login with empty password">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:32:29.413772" elapsed="0.000000"/>
+</kw>
+<kw name="Input username" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:29.415767" level="INFO">Typing text 'lakhssass' into text field 'name:username'.</msg>
+<msg time="2025-09-25T22:32:29.418138" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:32:29.419136" level="FAIL">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<arg>name:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-25T22:32:29.414769" elapsed="0.006361">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<arg>${username}</arg>
+<status status="FAIL" start="2025-09-25T22:32:29.413772" elapsed="0.008356">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<kw name="Input pwd" owner="login_resources">
+<arg>${password}</arg>
+<status status="NOT RUN" start="2025-09-25T22:32:29.423125" elapsed="0.000000"/>
+</kw>
+<kw name="Click Login Button" owner="login_resources">
+<status status="NOT RUN" start="2025-09-25T22:32:29.423125" elapsed="0.000000"/>
+</kw>
+<kw name="Error message should be visible for empty password" owner="login_resources">
+<status status="NOT RUN" start="2025-09-25T22:32:29.424123" elapsed="0.000000"/>
+</kw>
+<arg>lakhssass</arg>
+<arg>lancii</arg>
+<status status="FAIL" start="2025-09-25T22:32:29.412775" elapsed="0.011348">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<status status="FAIL" start="2025-09-25T22:32:29.411423" elapsed="0.012700">InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</test>
+<kw name="Close Browsers" owner="login_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-09-25T22:32:29.426298" elapsed="3.024439"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:29.425288" elapsed="3.025449"/>
+</kw>
+<status status="FAIL" start="2025-09-25T22:32:02.843428" elapsed="29.608306"/>
+</suite>
+<suite id="s1-s3" name="Dropdown" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\dropdown.robot">
+<test id="s1-s3-t1" name="TestingRadioBox" line="9">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:32:13.797363" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:13.798392" level="INFO">Opening browser 'chrome' to base url 'https://www.letskodeit.com/practice'.</msg>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:13.798392" elapsed="6.952070"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:32:20.752018" elapsed="1.121302"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:21.873320" level="INFO">Selecting options from selection list 'carselect' by value benz.</msg>
+<msg time="2025-09-25T22:32:25.980378" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654b4b91]
+	(No symbol) [0x0x7ff6655640fe]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:32:25.980378" level="FAIL">TypeError: 'NoneType' object is not iterable</msg>
+<arg>carselect</arg>
+<arg>benz</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2025-09-25T22:32:21.873320" elapsed="4.111644">TypeError: 'NoneType' object is not iterable</status>
+</kw>
+<kw name="Select All From List" owner="SeleniumLibrary">
+<arg>multiple-select-example</arg>
+<doc>Selects all options from multi-selection list ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T22:32:25.986959" elapsed="0.000000"/>
+</kw>
+<kw name="Unselect From List By Index" owner="SeleniumLibrary">
+<arg>multiple-select-example</arg>
+<arg>1</arg>
+<doc>Unselects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2025-09-25T22:32:25.986959" elapsed="0.000997"/>
+</kw>
+<status status="FAIL" start="2025-09-25T22:32:13.795161" elapsed="12.192795">TypeError: 'NoneType' object is not iterable</status>
+</test>
+<status status="FAIL" start="2025-09-25T22:32:13.325231" elapsed="12.663881"/>
+</suite>
+<suite id="s1-s4" name="Frames" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\Frames.robot">
+<test id="s1-s4-t1" name="Handling Frames" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:29.726647" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/frames.php'.</msg>
+<arg>https://www.tutorialspoint.com/selenium/practice/frames.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:29.726647" elapsed="2.416059"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:32:32.142706" elapsed="0.045052"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:32.189754" level="INFO">Selecting frame 'xpath:/html/body/main/div/div/div[2]/iframe[1]'.</msg>
+<arg>xpath:/html/body/main/div/div/div[2]/iframe[1]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-09-25T22:32:32.188756" elapsed="0.046097"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:32.235850" level="INFO">Clicking link '/selenium/index.htm'.</msg>
+<arg>/selenium/index.htm</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:32.235850" elapsed="0.246013"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-09-25T22:32:32.482857" elapsed="0.008413"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:32:34.493697" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:32:32.491270" elapsed="2.003423"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.494693" elapsed="0.053757"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:34.551447" level="INFO">Selecting frame 'xpath:/html/body/main/div/div/div[2]/iframe[2]'.</msg>
+<arg>xpath:/html/body/main/div/div/div[2]/iframe[2]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.550445" elapsed="0.078153"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=a[href="/selenium/index.htm"]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.628598" elapsed="0.052035"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>css=a[href="/selenium/index.htm"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.680633" elapsed="0.328606"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:35.010376" level="INFO">Clicking link '/selenium/index.htm'.</msg>
+<arg>/selenium/index.htm</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:35.010376" elapsed="0.271264"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-09-25T22:32:35.282638" elapsed="0.060954"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:29.724585" elapsed="5.620002"/>
+</test>
+<status status="PASS" start="2025-09-25T22:32:29.279168" elapsed="6.066416"/>
+</suite>
+<suite id="s1-s5" name="MouseAcrions" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\MouseAcrions.robot">
+<test id="s1-s5-t1" name="Mouse Actions" line="5">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.273423" elapsed="0.000999"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:34.275557" level="INFO">Opening browser 'chrome' to base url 'https://vinothqaacademy.com/mouse-event/'.</msg>
+<arg>https://vinothqaacademy.com/mouse-event/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.274422" elapsed="5.301147"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:32:39.575569" elapsed="1.042858"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath://*[@id="rightclick"]</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:40.619424" elapsed="2.354137"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:42.974560" level="INFO">Double clicking element 'xpath://*[@id="dblclick"]'.</msg>
+<arg>xpath://*[@id="dblclick"]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:42.974560" elapsed="2.337253"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:draggableElement</arg>
+<arg>id:droppableElement</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-09-25T22:32:45.311813" elapsed="3.615738"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:34.271429" elapsed="14.656122"/>
+</test>
+<status status="PASS" start="2025-09-25T22:32:33.624936" elapsed="15.304001"/>
+</suite>
+<suite id="s1-s6" name="NavigationKeywords" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\NavigationKeywords.robot">
+<test id="s1-s6-t1" name="NavigationKeywords Test" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:39.217037" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:39.217037" elapsed="2.359142"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:41.583157" level="INFO">${loc1} = https://www.google.com/</msg>
+<var>${loc1}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-09-25T22:32:41.577450" elapsed="0.005707"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:32:41.584157" elapsed="0.000997"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:32:42.599000" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:32:41.585154" elapsed="1.013846"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:42.600509" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
+<arg>https://www.bing.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:42.599000" elapsed="1.870181"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:44.480771" level="INFO">${loc2} = https://www.bing.com/</msg>
+<var>${loc2}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-09-25T22:32:44.470173" elapsed="0.010598"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:32:44.480771" elapsed="0.001081"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:32:45.483665" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:32:44.481852" elapsed="1.001813"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:39.213927" elapsed="6.269738"/>
+</test>
+<status status="PASS" start="2025-09-25T22:32:38.713911" elapsed="6.770750"/>
+</suite>
+<suite id="s1-s7" name="Page object model" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\Page_object_model.robot">
+<test id="s1-s7-t1" name="LoginTest" line="13">
+<kw name="Open my Browser" owner="login_Keywords">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:32:51.217385" elapsed="0.000997"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:51.219379" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:51.218382" elapsed="6.683876"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:32:57.903256" elapsed="1.143400"/>
 </kw>
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
-<status status="PASS" start="2025-09-25T17:05:24.422419" elapsed="3.811087"/>
+<status status="PASS" start="2025-09-25T22:32:51.215390" elapsed="7.831266"/>
+</kw>
+<kw name="Enter UserName" owner="login_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:59.049677" level="INFO">Typing text 'lakhssass' into text field 'name:userName'.</msg>
+<arg>${login_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:59.048651" elapsed="3.153125"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2025-09-25T22:32:59.047653" elapsed="3.154123"/>
+</kw>
+<kw name="Enter Password" owner="login_Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:02.203976" level="INFO">Typing text 'yessir' into text field 'name:password'.</msg>
+<arg>${login_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:02.203976" elapsed="3.113174"/>
+</kw>
+<arg>${pwd}</arg>
+<status status="PASS" start="2025-09-25T22:33:02.202774" elapsed="3.114376"/>
+</kw>
+<kw name="Click SignIn" owner="login_Keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:05.319326" level="INFO">Clicking button 'xpath:/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[4]/td[2]/div/input'.</msg>
+<msg time="2025-09-25T22:33:05.323744" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654b4b91]
+	(No symbol) [0x0x7ff6655640fe]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:33:05.323744" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654b4b91]
+	(No symbol) [0x0x7ff6655640fe]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-25T22:33:05.318301" elapsed="0.010623">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654b4b91]
+	(No symbol) [0x0x7ff6655640fe]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<status status="FAIL" start="2025-09-25T22:33:05.317150" elapsed="0.011774">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654b4b91]
+	(No symbol) [0x0x7ff6655640fe]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<kw name="Verify Successful Login" owner="login_Keywords">
+<status status="NOT RUN" start="2025-09-25T22:33:05.329934" elapsed="0.000000"/>
+</kw>
+<kw name="Close my browsers" owner="login_Keywords">
+<status status="NOT RUN" start="2025-09-25T22:33:05.329934" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-09-25T22:32:51.213395" elapsed="14.117543">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654b4b91]
+	(No symbol) [0x0x7ff6655640fe]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</test>
+<status status="FAIL" start="2025-09-25T22:32:50.714977" elapsed="14.616972"/>
+</suite>
+<suite id="s1-s8" name="RadioButtons" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\RadioButtons.robot">
+<test id="s1-s8-t1" name="TestingRadioBox" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:53.067791" level="INFO">Opening browser 'chrome' to base url 'https://www.letskodeit.com/practice'.</msg>
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:53.067791" elapsed="4.934202"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:32:58.002992" elapsed="0.088229"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:32:58.091221" elapsed="0.001001"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:58.093218" level="INFO">Selecting 'bmw' from radio button 'cars'.</msg>
+<arg>cars</arg>
+<arg>bmw</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-09-25T22:32:58.093218" elapsed="3.169647"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:01.264000" level="INFO">Selecting checkbox 'benz'.</msg>
+<msg time="2025-09-25T22:33:03.497867" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:33:03.497867" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<arg>benz</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-25T22:33:01.262865" elapsed="2.239545">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>bmw</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T22:33:03.502410" elapsed="0.000000"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<arg>bmw</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T22:33:03.502410" elapsed="0.000998"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-09-25T22:33:03.503408" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-09-25T22:32:53.065760" elapsed="10.438645">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</test>
+<status status="FAIL" start="2025-09-25T22:32:52.332756" elapsed="11.181229"/>
+</suite>
+<suite id="s1-s9" name="RegistrationTest" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\RegistrationTest.robot">
+<test id="s1-s9-t1" name="RegistrationTest" line="12">
+<kw name="Open my Browser" owner="register_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:07.045204" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:33:07.045204" elapsed="3.205840"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:33:10.252041" elapsed="0.045801"/>
+</kw>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2025-09-25T22:33:07.044087" elapsed="3.253755"/>
 </kw>
 <kw name="Click Register Link" owner="register_keywords">
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:28.238808" level="INFO">Clicking link 'link:REGISTER'.</msg>
+<msg time="2025-09-25T22:33:10.302234" level="INFO">Clicking link 'link:REGISTER'.</msg>
 <arg>${link_Reg}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:28.236531" elapsed="0.943851"/>
+<status status="PASS" start="2025-09-25T22:33:10.300240" elapsed="1.525355"/>
 </kw>
-<status status="PASS" start="2025-09-25T17:05:28.235532" elapsed="0.944850"/>
+<status status="PASS" start="2025-09-25T22:33:10.299237" elapsed="1.527353"/>
 </kw>
 <kw name="Enter FirstName" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:29.182412" level="INFO">Typing text 'Othman' into text field 'name:firstName'.</msg>
+<msg time="2025-09-25T22:33:11.830582" level="INFO">Typing text 'Othman' into text field 'name:firstName'.</msg>
 <arg>${txt_firstName}</arg>
 <arg>${firstName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:29.181400" elapsed="0.161750"/>
+<status status="PASS" start="2025-09-25T22:33:11.829584" elapsed="0.202316"/>
 </kw>
 <arg>Othman</arg>
-<status status="PASS" start="2025-09-25T17:05:29.181400" elapsed="0.161750"/>
+<status status="PASS" start="2025-09-25T22:33:11.827589" elapsed="0.204311"/>
 </kw>
 <kw name="Enter LastName" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:29.346572" level="INFO">Typing text 'Nagifi' into text field 'name:lastName'.</msg>
+<msg time="2025-09-25T22:33:12.036192" level="INFO">Typing text 'Nagifi' into text field 'name:lastName'.</msg>
 <arg>${txt_lastName}</arg>
 <arg>${lastName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:29.345310" elapsed="0.126636"/>
+<status status="PASS" start="2025-09-25T22:33:12.034198" elapsed="0.137888"/>
 </kw>
 <arg>Nagifi</arg>
-<status status="PASS" start="2025-09-25T17:05:29.344270" elapsed="0.128837"/>
+<status status="PASS" start="2025-09-25T22:33:12.033179" elapsed="0.138907"/>
 </kw>
 <kw name="Enter Phone" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:29.475185" level="INFO">Typing text '1234567890' into text field 'name:phone'.</msg>
+<msg time="2025-09-25T22:33:12.174080" level="INFO">Typing text '1234567890' into text field 'name:phone'.</msg>
 <arg>${txt_phone}</arg>
 <arg>${phone}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:29.474132" elapsed="0.110374"/>
+<status status="PASS" start="2025-09-25T22:33:12.173083" elapsed="0.193381"/>
 </kw>
 <arg>1234567890</arg>
-<status status="PASS" start="2025-09-25T17:05:29.473107" elapsed="0.112428"/>
+<status status="PASS" start="2025-09-25T22:33:12.172086" elapsed="0.194378"/>
 </kw>
 <kw name="Enter Email" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:29.587641" level="INFO">Typing text 'othnag2020gmail.com' into text field 'name:userName'.</msg>
+<msg time="2025-09-25T22:33:12.368506" level="INFO">Typing text 'othnag2020gmail.com' into text field 'name:userName'.</msg>
 <arg>${txt_email}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:29.586614" elapsed="0.133297"/>
+<status status="PASS" start="2025-09-25T22:33:12.367491" elapsed="0.124743"/>
 </kw>
 <arg>othnag2020gmail.com</arg>
-<status status="PASS" start="2025-09-25T17:05:29.585535" elapsed="0.135613"/>
+<status status="PASS" start="2025-09-25T22:33:12.366464" elapsed="0.125770"/>
 </kw>
 <kw name="Enter Address" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:29.722216" level="INFO">Typing text 'Ottawa' into text field 'name:address1'.</msg>
+<msg time="2025-09-25T22:33:12.494248" level="INFO">Typing text 'Ottawa' into text field 'name:address1'.</msg>
 <arg>${txt_add1}</arg>
 <arg>${add1}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:29.722216" elapsed="0.135977"/>
+<status status="PASS" start="2025-09-25T22:33:12.493237" elapsed="0.179891"/>
 </kw>
 <arg>Ottawa</arg>
-<status status="PASS" start="2025-09-25T17:05:29.722216" elapsed="0.137246"/>
+<status status="PASS" start="2025-09-25T22:33:12.492234" elapsed="0.181893"/>
 </kw>
 <kw name="Enter City" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:29.862006" level="INFO">Typing text 'Ottawa' into text field 'name:city'.</msg>
+<msg time="2025-09-25T22:33:12.676628" level="INFO">Typing text 'Ottawa' into text field 'name:city'.</msg>
 <arg>${txt_city}</arg>
 <arg>${city}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:29.862006" elapsed="0.174088"/>
+<status status="PASS" start="2025-09-25T22:33:12.675619" elapsed="0.124179"/>
 </kw>
 <arg>Ottawa</arg>
-<status status="PASS" start="2025-09-25T17:05:29.860538" elapsed="0.176568"/>
+<status status="PASS" start="2025-09-25T22:33:12.674127" elapsed="0.126669"/>
 </kw>
 <kw name="Enter State" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:30.039136" level="INFO">Typing text 'Ontario' into text field 'name:state'.</msg>
+<msg time="2025-09-25T22:33:12.802790" level="INFO">Typing text 'Ontario' into text field 'name:state'.</msg>
 <arg>${txt_state}</arg>
 <arg>${state}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:30.038110" elapsed="0.098916"/>
+<status status="PASS" start="2025-09-25T22:33:12.801793" elapsed="0.119062"/>
 </kw>
 <arg>Ontario</arg>
-<status status="PASS" start="2025-09-25T17:05:30.037106" elapsed="0.099920"/>
+<status status="PASS" start="2025-09-25T22:33:12.800796" elapsed="0.120059"/>
 </kw>
 <kw name="Enter Postal Code" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:30.139310" level="INFO">Typing text 'K1N 9E5' into text field 'name:postalCode'.</msg>
+<msg time="2025-09-25T22:33:12.922871" level="INFO">Typing text 'K1N 9E5' into text field 'name:postalCode'.</msg>
 <arg>${txt_postCode }</arg>
 <arg>${postalCode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:30.139310" elapsed="0.208055"/>
+<status status="PASS" start="2025-09-25T22:33:12.921867" elapsed="0.130411"/>
 </kw>
 <arg>K1N 9E5</arg>
-<status status="PASS" start="2025-09-25T17:05:30.138279" elapsed="0.209086"/>
+<status status="PASS" start="2025-09-25T22:33:12.920855" elapsed="0.131423"/>
 </kw>
 <kw name="Select Country" owner="register_keywords">
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:30.349405" level="INFO">Selecting options from selection list 'name:country' by label CANADA.</msg>
+<msg time="2025-09-25T22:33:13.054476" level="INFO">Selecting options from selection list 'name:country' by label CANADA.</msg>
 <arg>${drp_country}</arg>
 <arg>${country}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2025-09-25T17:05:30.349405" elapsed="0.130724"/>
+<status status="PASS" start="2025-09-25T22:33:13.054476" elapsed="0.169865"/>
 </kw>
 <arg>CANADA</arg>
-<status status="PASS" start="2025-09-25T17:05:30.348409" elapsed="0.131720"/>
+<status status="PASS" start="2025-09-25T22:33:13.053288" elapsed="0.171053"/>
 </kw>
 <kw name="Enter username" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:30.482591" level="INFO">Typing text 'lakhssass' into text field 'name:email'.</msg>
+<msg time="2025-09-25T22:33:13.226661" level="INFO">Typing text 'lakhssass' into text field 'name:email'.</msg>
 <arg>${txt_userName}</arg>
 <arg>${user}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:30.481591" elapsed="0.204808"/>
+<status status="PASS" start="2025-09-25T22:33:13.226661" elapsed="0.152887"/>
 </kw>
 <arg>lakhssass</arg>
-<status status="PASS" start="2025-09-25T17:05:30.481591" elapsed="0.205968"/>
+<status status="PASS" start="2025-09-25T22:33:13.225339" elapsed="0.154209"/>
 </kw>
 <kw name="Enter password" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:30.689633" level="INFO">Typing text 'johnxyz' into text field 'name:password'.</msg>
+<msg time="2025-09-25T22:33:13.381626" level="INFO">Typing text 'johnxyz' into text field 'name:password'.</msg>
 <arg>${txt_password}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:30.688607" elapsed="0.113531"/>
+<status status="PASS" start="2025-09-25T22:33:13.380603" elapsed="0.170951"/>
 </kw>
 <arg>johnxyz</arg>
-<status status="PASS" start="2025-09-25T17:05:30.687559" elapsed="0.114579"/>
+<status status="PASS" start="2025-09-25T22:33:13.379548" elapsed="0.172006"/>
 </kw>
 <kw name="Enter comfirmed Password" owner="register_keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:30.804652" level="INFO">Typing text 'johnxyz' into text field 'name:confirmPassword'.</msg>
+<msg time="2025-09-25T22:33:13.554055" level="INFO">Typing text 'johnxyz' into text field 'name:confirmPassword'.</msg>
 <arg>${txt_confirmedPassword }</arg>
 <arg>${cPassword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:30.803142" elapsed="0.192551"/>
+<status status="PASS" start="2025-09-25T22:33:13.552999" elapsed="0.141165"/>
 </kw>
 <arg>johnxyz</arg>
-<status status="PASS" start="2025-09-25T17:05:30.803142" elapsed="0.192551"/>
+<status status="PASS" start="2025-09-25T22:33:13.551554" elapsed="0.142610"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-09-25T17:05:33.006059" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-09-25T22:33:15.699911" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-09-25T17:05:30.996689" elapsed="2.010879"/>
+<status status="PASS" start="2025-09-25T22:33:13.695175" elapsed="2.004736"/>
 </kw>
 <kw name="Click envoyer" owner="register_keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:33.011770" level="INFO">Clicking button 'xpath://html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[17]/td/input'.</msg>
+<msg time="2025-09-25T22:33:15.701233" level="INFO">Clicking button 'xpath://html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[17]/td/input'.</msg>
+<msg time="2025-09-25T22:33:15.823070" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:33:15.824082" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
 <arg>${btn_submit}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T17:05:33.010564" elapsed="0.859484"/>
+<status status="FAIL" start="2025-09-25T22:33:15.701233" elapsed="0.126971">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
 </kw>
-<status status="PASS" start="2025-09-25T17:05:33.008569" elapsed="0.861479"/>
+<status status="FAIL" start="2025-09-25T22:33:15.699911" elapsed="0.129449">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
 </kw>
 <kw name="Verify Successful Registration" owner="register_keywords">
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-09-25T17:05:33.888031" level="INFO">Page title is 'Register: Mercury Tours'.</msg>
-<arg>Register: Mercury Tours</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-09-25T17:05:33.871059" elapsed="0.016972"/>
-</kw>
-<status status="PASS" start="2025-09-25T17:05:33.871059" elapsed="0.017968"/>
+<status status="NOT RUN" start="2025-09-25T22:33:15.829360" elapsed="0.000000"/>
 </kw>
 <kw name="Close my browsers" owner="register_keywords">
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-09-25T17:05:33.890247" elapsed="2.290894"/>
+<status status="NOT RUN" start="2025-09-25T22:33:15.830391" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-09-25T17:05:33.890247" elapsed="2.290894"/>
-</kw>
-<status status="PASS" start="2025-09-25T17:05:24.420144" elapsed="11.762241"/>
+<status status="FAIL" start="2025-09-25T22:33:07.043090" elapsed="8.787301">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
 </test>
-<status status="PASS" start="2025-09-25T17:05:23.915459" elapsed="12.268924"/>
+<status status="FAIL" start="2025-09-25T22:33:06.604256" elapsed="9.237651"/>
+</suite>
+<suite id="s1-s10" name="ScreenshotTest" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\ScreenshotTest.robot">
+<test id="s1-s10-t1" name="Screenshots Test" line="5">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:33:09.177501" elapsed="0.000997"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:09.179496" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:33:09.178498" elapsed="4.219758"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:13.550466" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:33:13.551554" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2025-09-25T22:33:13.399248" elapsed="0.156984">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:username</arg>
+<arg>lakhssass</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T22:33:13.556232" elapsed="0.001151"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>lancii</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T22:33:13.557383" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[1]/img</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="NOT RUN" start="2025-09-25T22:33:13.558408" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-09-25T22:33:09.175495" elapsed="4.382913">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</test>
+<status status="FAIL" start="2025-09-25T22:33:08.681375" elapsed="4.879529"/>
+</suite>
+<suite id="s1-s11" name="Scrolling" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\Scrolling.robot">
+<test id="s1-s11-t1" name="Scorlling test" line="5">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:33:17.199662" elapsed="0.001012"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:17.200674" level="INFO">Opening browser 'chrome' to base url 'https://www.worldometers.info/geography/alphabetical-list-of-countries/'.</msg>
+<arg>https://www.worldometers.info/geography/alphabetical-list-of-countries/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:33:17.200674" elapsed="5.208001"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:33:22.408675" elapsed="1.326154"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:25.946886" level="INFO">${count} = 293</msg>
+<var>${count}</var>
+<arg>xpath://a</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:23.734829" elapsed="2.213054"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:25.948880" elapsed="0.001995"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-09-25T22:33:25.953867" level="INFO">@{linkItems} = [ ]</msg>
+<var>@{linkItems}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-09-25T22:33:25.950875" elapsed="0.002992"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:32.963084" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:25.955861" elapsed="7.007223"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:32.964081" elapsed="0.000996"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-09-25T22:33:25.954864" elapsed="7.010213"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:35.175045" level="INFO">${linkText} = Population</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:32.966074" elapsed="2.208971"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:35.176047" elapsed="0.001992"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-09-25T22:33:32.965077" elapsed="2.212962"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:37.241624" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:35.178039" elapsed="2.063585"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:37.242659" elapsed="0.001070"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-09-25T22:33:35.178039" elapsed="2.065690"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:39.338783" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:37.245775" elapsed="2.093008"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:39.338783" elapsed="0.001168"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-09-25T22:33:37.244776" elapsed="2.095175"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:41.427759" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:39.340983" elapsed="2.086776"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:41.429226" elapsed="0.001185"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2025-09-25T22:33:39.339951" elapsed="2.090460"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:43.500831" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:41.431817" elapsed="2.069014"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:43.500831" elapsed="0.001292"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2025-09-25T22:33:41.431817" elapsed="2.070306"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:45.547454" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:43.503305" elapsed="2.044149"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:45.547454" elapsed="0.001179"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2025-09-25T22:33:43.503305" elapsed="2.045328"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:47.672102" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:45.548633" elapsed="2.123469"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:47.672102" elapsed="0.001495"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2025-09-25T22:33:45.548633" elapsed="2.126010"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:50.007795" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:47.675651" elapsed="2.332144"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:50.008797" elapsed="0.001991"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2025-09-25T22:33:47.674643" elapsed="2.336145"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:52.125170" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:50.011786" elapsed="2.113384"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:52.126170" elapsed="0.000996"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2025-09-25T22:33:50.011786" elapsed="2.115380"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:54.558891" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:52.129160" elapsed="2.429731"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:54.559888" elapsed="0.000997"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2025-09-25T22:33:52.128162" elapsed="2.432723"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:58.039149" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:54.562100" elapsed="3.477049"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:58.040412" elapsed="0.000000"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2025-09-25T22:33:54.560885" elapsed="3.479527"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:00.093968" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:58.041443" elapsed="2.052525"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:00.094964" elapsed="0.000000"/>
+</kw>
+<var name="${i}">13</var>
+<status status="PASS" start="2025-09-25T22:33:58.040412" elapsed="2.054552"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:02.149808" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:00.095960" elapsed="2.053848"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:02.150898" elapsed="0.000000"/>
+</kw>
+<var name="${i}">14</var>
+<status status="PASS" start="2025-09-25T22:34:00.095960" elapsed="2.055961"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:04.190554" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:02.151921" elapsed="2.038633"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:04.191550" elapsed="0.001381"/>
+</kw>
+<var name="${i}">15</var>
+<status status="PASS" start="2025-09-25T22:34:02.151921" elapsed="2.041010"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:06.350555" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:04.192931" elapsed="2.157624"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:06.351553" elapsed="0.000000"/>
+</kw>
+<var name="${i}">16</var>
+<status status="PASS" start="2025-09-25T22:34:04.192931" elapsed="2.159616"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:08.433928" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:06.352547" elapsed="2.082379"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:08.434926" elapsed="0.000997"/>
+</kw>
+<var name="${i}">17</var>
+<status status="PASS" start="2025-09-25T22:34:06.352547" elapsed="2.083376"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:10.504549" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:08.436922" elapsed="2.069022"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:10.505944" elapsed="0.000996"/>
+</kw>
+<var name="${i}">18</var>
+<status status="PASS" start="2025-09-25T22:34:08.435923" elapsed="2.071017"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:12.550867" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:10.507936" elapsed="2.042931"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:12.550867" elapsed="0.001282"/>
+</kw>
+<var name="${i}">19</var>
+<status status="PASS" start="2025-09-25T22:34:10.506940" elapsed="2.045209"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:14.590908" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:12.553299" elapsed="2.037609"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:14.590908" elapsed="0.001071"/>
+</kw>
+<var name="${i}">20</var>
+<status status="PASS" start="2025-09-25T22:34:12.553299" elapsed="2.040016"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:16.688565" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:14.594350" elapsed="2.094215"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:16.689668" elapsed="0.001001"/>
+</kw>
+<var name="${i}">21</var>
+<status status="PASS" start="2025-09-25T22:34:14.593315" elapsed="2.098352"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:18.741505" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:16.692664" elapsed="2.048841"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:18.742503" elapsed="0.000997"/>
+</kw>
+<var name="${i}">22</var>
+<status status="PASS" start="2025-09-25T22:34:16.691667" elapsed="2.051833"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:20.795361" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:18.743500" elapsed="2.051861"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:20.795361" elapsed="0.001356"/>
+</kw>
+<var name="${i}">23</var>
+<status status="PASS" start="2025-09-25T22:34:18.743500" elapsed="2.053217"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:23.427141" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:20.797756" elapsed="2.629385"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:23.428139" elapsed="0.002991"/>
+</kw>
+<var name="${i}">24</var>
+<status status="PASS" start="2025-09-25T22:34:20.797756" elapsed="2.633374"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:26.910389" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:23.433125" elapsed="3.477264"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:26.911503" elapsed="0.001001"/>
+</kw>
+<var name="${i}">25</var>
+<status status="PASS" start="2025-09-25T22:34:23.432128" elapsed="3.480376"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:28.985319" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:26.913574" elapsed="2.072747"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:28.986321" elapsed="0.000000"/>
+</kw>
+<var name="${i}">26</var>
+<status status="PASS" start="2025-09-25T22:34:26.913574" elapsed="2.072747"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:31.084620" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:28.987557" elapsed="2.097063"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:31.084620" elapsed="0.001334"/>
+</kw>
+<var name="${i}">27</var>
+<status status="PASS" start="2025-09-25T22:34:28.987557" elapsed="2.098397"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:33.137242" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:31.086950" elapsed="2.051287"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:33.138237" elapsed="0.001462"/>
+</kw>
+<var name="${i}">28</var>
+<status status="PASS" start="2025-09-25T22:34:31.086950" elapsed="2.052749"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:35.207902" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:33.139699" elapsed="2.068203"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:35.209123" elapsed="0.000000"/>
+</kw>
+<var name="${i}">29</var>
+<status status="PASS" start="2025-09-25T22:34:33.139699" elapsed="2.069424"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:37.259846" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:35.210130" elapsed="2.049716"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:37.260844" elapsed="0.000000"/>
+</kw>
+<var name="${i}">30</var>
+<status status="PASS" start="2025-09-25T22:34:35.210130" elapsed="2.051950"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:39.315123" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:37.262080" elapsed="2.053043"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:39.315123" elapsed="0.001111"/>
+</kw>
+<var name="${i}">31</var>
+<status status="PASS" start="2025-09-25T22:34:37.262080" elapsed="2.054154"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:41.375492" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:39.317231" elapsed="2.058261"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:41.375492" elapsed="0.000000"/>
+</kw>
+<var name="${i}">32</var>
+<status status="PASS" start="2025-09-25T22:34:39.316234" elapsed="2.060688"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:43.423236" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:41.376922" elapsed="2.046314"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:43.423236" elapsed="0.001135"/>
+</kw>
+<var name="${i}">33</var>
+<status status="PASS" start="2025-09-25T22:34:41.376922" elapsed="2.047449"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:45.459445" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:43.425391" elapsed="2.034054"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:45.460443" elapsed="0.001084"/>
+</kw>
+<var name="${i}">34</var>
+<status status="PASS" start="2025-09-25T22:34:43.425391" elapsed="2.036136"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:47.519726" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:45.462527" elapsed="2.057199"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:47.520723" elapsed="0.000000"/>
+</kw>
+<var name="${i}">35</var>
+<status status="PASS" start="2025-09-25T22:34:45.461527" elapsed="2.060194"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:49.561100" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:47.522719" elapsed="2.038381"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:49.562098" elapsed="0.000000"/>
+</kw>
+<var name="${i}">36</var>
+<status status="PASS" start="2025-09-25T22:34:47.521721" elapsed="2.041374"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:51.604864" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:49.563095" elapsed="2.041769"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:51.606071" elapsed="0.001090"/>
+</kw>
+<var name="${i}">37</var>
+<status status="PASS" start="2025-09-25T22:34:49.563095" elapsed="2.044066"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:56.105210" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:51.608481" elapsed="4.496729"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:56.106208" elapsed="0.001011"/>
+</kw>
+<var name="${i}">38</var>
+<status status="PASS" start="2025-09-25T22:34:51.607161" elapsed="4.500058"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:58.160180" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:56.107219" elapsed="2.052961"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:58.160180" elapsed="0.001232"/>
+</kw>
+<var name="${i}">39</var>
+<status status="PASS" start="2025-09-25T22:34:56.107219" elapsed="2.054193"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:00.238784" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:58.162431" elapsed="2.076353"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:00.239781" elapsed="0.000997"/>
+</kw>
+<var name="${i}">40</var>
+<status status="PASS" start="2025-09-25T22:34:58.162431" elapsed="2.078347"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:02.278445" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:00.240778" elapsed="2.037667"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:02.278445" elapsed="0.001498"/>
+</kw>
+<var name="${i}">41</var>
+<status status="PASS" start="2025-09-25T22:35:00.240778" elapsed="2.040206"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:04.324124" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:02.280984" elapsed="2.043140"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:04.324124" elapsed="0.001000"/>
+</kw>
+<var name="${i}">42</var>
+<status status="PASS" start="2025-09-25T22:35:02.280984" elapsed="2.044140"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:06.370429" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:04.326120" elapsed="2.044309"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:06.371425" elapsed="0.000997"/>
+</kw>
+<var name="${i}">43</var>
+<status status="PASS" start="2025-09-25T22:35:04.326120" elapsed="2.046302"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:08.417368" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:06.372422" elapsed="2.044946"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:08.417368" elapsed="0.001492"/>
+</kw>
+<var name="${i}">44</var>
+<status status="PASS" start="2025-09-25T22:35:06.372422" elapsed="2.046438"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:10.464149" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:08.419947" elapsed="2.044202"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:10.465143" elapsed="0.000000"/>
+</kw>
+<var name="${i}">45</var>
+<status status="PASS" start="2025-09-25T22:35:08.418860" elapsed="2.046283"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:12.532501" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:10.466500" elapsed="2.066001"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:12.532501" elapsed="0.001099"/>
+</kw>
+<var name="${i}">46</var>
+<status status="PASS" start="2025-09-25T22:35:10.466500" elapsed="2.067100"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:14.593430" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:12.533600" elapsed="2.059830"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:14.593430" elapsed="0.000996"/>
+</kw>
+<var name="${i}">47</var>
+<status status="PASS" start="2025-09-25T22:35:12.533600" elapsed="2.060826"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:16.642453" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:14.595424" elapsed="2.047029"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:16.642453" elapsed="0.000000"/>
+</kw>
+<var name="${i}">48</var>
+<status status="PASS" start="2025-09-25T22:35:14.595424" elapsed="2.048420"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:18.690549" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:16.643844" elapsed="2.046705"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:18.690549" elapsed="0.000996"/>
+</kw>
+<var name="${i}">49</var>
+<status status="PASS" start="2025-09-25T22:35:16.643844" elapsed="2.047701"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:20.743810" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:18.692542" elapsed="2.051268"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:20.743810" elapsed="0.001144"/>
+</kw>
+<var name="${i}">50</var>
+<status status="PASS" start="2025-09-25T22:35:18.692542" elapsed="2.052412"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:23.607009" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:20.745983" elapsed="2.861026"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:23.607009" elapsed="0.001275"/>
+</kw>
+<var name="${i}">51</var>
+<status status="PASS" start="2025-09-25T22:35:20.744954" elapsed="2.864341"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:25.809328" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:23.609295" elapsed="2.200033"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:25.810324" elapsed="0.000000"/>
+</kw>
+<var name="${i}">52</var>
+<status status="PASS" start="2025-09-25T22:35:23.609295" elapsed="2.201029"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:27.860485" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:25.811321" elapsed="2.049164"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:27.860485" elapsed="0.001130"/>
+</kw>
+<var name="${i}">53</var>
+<status status="PASS" start="2025-09-25T22:35:25.811321" elapsed="2.050294"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:29.921981" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:27.862624" elapsed="2.059357"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:29.921981" elapsed="0.001182"/>
+</kw>
+<var name="${i}">54</var>
+<status status="PASS" start="2025-09-25T22:35:27.861615" elapsed="2.061548"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:31.956041" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:29.924185" elapsed="2.031856"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:31.957139" elapsed="0.000000"/>
+</kw>
+<var name="${i}">55</var>
+<status status="PASS" start="2025-09-25T22:35:29.923163" elapsed="2.033976"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:34.030033" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:31.958164" elapsed="2.072790"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:34.031950" elapsed="0.000000"/>
+</kw>
+<var name="${i}">56</var>
+<status status="PASS" start="2025-09-25T22:35:31.958164" elapsed="2.074960"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:36.075478" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:34.033124" elapsed="2.042354"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:36.076476" elapsed="0.000000"/>
+</kw>
+<var name="${i}">57</var>
+<status status="PASS" start="2025-09-25T22:35:34.033124" elapsed="2.043352"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:38.126990" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:36.077473" elapsed="2.049517"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:38.127814" elapsed="0.000986"/>
+</kw>
+<var name="${i}">58</var>
+<status status="PASS" start="2025-09-25T22:35:36.077473" elapsed="2.051327"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:40.173261" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:38.129796" elapsed="2.043465"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:40.173261" elapsed="0.001422"/>
+</kw>
+<var name="${i}">59</var>
+<status status="PASS" start="2025-09-25T22:35:38.128800" elapsed="2.045883"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:42.267346" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:40.174683" elapsed="2.092663"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:42.268342" elapsed="0.000998"/>
+</kw>
+<var name="${i}">60</var>
+<status status="PASS" start="2025-09-25T22:35:40.174683" elapsed="2.094657"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:44.427907" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:42.270704" elapsed="2.157203"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:44.427907" elapsed="0.001287"/>
+</kw>
+<var name="${i}">61</var>
+<status status="PASS" start="2025-09-25T22:35:42.269340" elapsed="2.159854"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:46.496158" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:44.429194" elapsed="2.066964"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:46.496158" elapsed="0.001378"/>
+</kw>
+<var name="${i}">62</var>
+<status status="PASS" start="2025-09-25T22:35:44.429194" elapsed="2.068342"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:48.528863" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:46.497536" elapsed="2.031327"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:48.528863" elapsed="0.001359"/>
+</kw>
+<var name="${i}">63</var>
+<status status="PASS" start="2025-09-25T22:35:46.497536" elapsed="2.032686"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:50.678267" level="INFO">${linkText} = W</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:48.530222" elapsed="2.148045"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:50.678267" elapsed="0.000997"/>
+</kw>
+<var name="${i}">64</var>
+<status status="PASS" start="2025-09-25T22:35:48.530222" elapsed="2.150038"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:53.633776" level="INFO">${linkText} = A</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:50.680260" elapsed="2.953516"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:53.634771" elapsed="0.000998"/>
+</kw>
+<var name="${i}">65</var>
+<status status="PASS" start="2025-09-25T22:35:50.680260" elapsed="2.955509"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:55.913876" level="INFO">${linkText} = B</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:53.636767" elapsed="2.277109"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:55.913876" elapsed="0.001508"/>
+</kw>
+<var name="${i}">66</var>
+<status status="PASS" start="2025-09-25T22:35:53.635769" elapsed="2.279615"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:57.969595" level="INFO">${linkText} = C</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:55.915384" elapsed="2.054211"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:35:57.969595" elapsed="0.001072"/>
+</kw>
+<var name="${i}">67</var>
+<status status="PASS" start="2025-09-25T22:35:55.915384" elapsed="2.055283"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:00.005684" level="INFO">${linkText} = D</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:57.971707" elapsed="2.034967"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:00.006674" elapsed="0.001993"/>
+</kw>
+<var name="${i}">68</var>
+<status status="PASS" start="2025-09-25T22:35:57.970667" elapsed="2.038000"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:02.055241" level="INFO">${linkText} = E</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:00.009708" elapsed="2.045533"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:02.056210" elapsed="0.000000"/>
+</kw>
+<var name="${i}">69</var>
+<status status="PASS" start="2025-09-25T22:36:00.009708" elapsed="2.046502"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:04.099397" level="INFO">${linkText} = F</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:02.057227" elapsed="2.042170"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:04.099397" elapsed="0.001256"/>
+</kw>
+<var name="${i}">70</var>
+<status status="PASS" start="2025-09-25T22:36:02.057227" elapsed="2.043426"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:06.143650" level="INFO">${linkText} = G</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:04.100653" elapsed="2.042997"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:06.143650" elapsed="0.001085"/>
+</kw>
+<var name="${i}">71</var>
+<status status="PASS" start="2025-09-25T22:36:04.100653" elapsed="2.044082"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:08.201916" level="INFO">${linkText} = H</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:06.145864" elapsed="2.056052"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:08.201916" elapsed="0.001340"/>
+</kw>
+<var name="${i}">72</var>
+<status status="PASS" start="2025-09-25T22:36:06.144735" elapsed="2.058521"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:10.246119" level="INFO">${linkText} = I</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:08.203256" elapsed="2.042863"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:10.247284" elapsed="0.001035"/>
+</kw>
+<var name="${i}">73</var>
+<status status="PASS" start="2025-09-25T22:36:08.203256" elapsed="2.045063"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:12.363896" level="INFO">${linkText} = J</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:10.249347" elapsed="2.114549"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:12.364860" elapsed="0.000000"/>
+</kw>
+<var name="${i}">74</var>
+<status status="PASS" start="2025-09-25T22:36:10.248319" elapsed="2.117538"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:14.420859" level="INFO">${linkText} = K</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:12.365857" elapsed="2.055002"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:14.420859" elapsed="0.000000"/>
+</kw>
+<var name="${i}">75</var>
+<status status="PASS" start="2025-09-25T22:36:12.365857" elapsed="2.055002"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:16.469121" level="INFO">${linkText} = L</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:14.422297" elapsed="2.046824"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:16.469121" elapsed="0.000998"/>
+</kw>
+<var name="${i}">76</var>
+<status status="PASS" start="2025-09-25T22:36:14.422297" elapsed="2.047822"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:18.556523" level="INFO">${linkText} = M</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:16.471116" elapsed="2.085407"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:18.556523" elapsed="0.001176"/>
+</kw>
+<var name="${i}">77</var>
+<status status="PASS" start="2025-09-25T22:36:16.471116" elapsed="2.086583"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:22.937954" level="INFO">${linkText} = N</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:18.558894" elapsed="4.379060"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:22.937954" elapsed="0.001205"/>
+</kw>
+<var name="${i}">78</var>
+<status status="PASS" start="2025-09-25T22:36:18.557699" elapsed="4.381460"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:24.980218" level="INFO">${linkText} = O</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:22.939159" elapsed="2.041059"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:24.980218" elapsed="0.001158"/>
+</kw>
+<var name="${i}">79</var>
+<status status="PASS" start="2025-09-25T22:36:22.939159" elapsed="2.042217"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:27.029959" level="INFO">${linkText} = P</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:24.982533" elapsed="2.047426"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:27.030953" elapsed="0.000000"/>
+</kw>
+<var name="${i}">80</var>
+<status status="PASS" start="2025-09-25T22:36:24.981376" elapsed="2.049577"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:29.067008" level="INFO">${linkText} = Q</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:27.032010" elapsed="2.034998"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:29.067008" elapsed="0.001479"/>
+</kw>
+<var name="${i}">81</var>
+<status status="PASS" start="2025-09-25T22:36:27.032010" elapsed="2.036477"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:31.124304" level="INFO">${linkText} = R</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:29.068487" elapsed="2.055817"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:31.124304" elapsed="0.001000"/>
+</kw>
+<var name="${i}">82</var>
+<status status="PASS" start="2025-09-25T22:36:29.068487" elapsed="2.056817"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:33.170867" level="INFO">${linkText} = S</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:31.126450" elapsed="2.044417"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:33.170867" elapsed="0.001337"/>
+</kw>
+<var name="${i}">83</var>
+<status status="PASS" start="2025-09-25T22:36:31.125304" elapsed="2.047927"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:35.216901" level="INFO">${linkText} = T</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:33.174241" elapsed="2.042660"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:35.216901" elapsed="0.000000"/>
+</kw>
+<var name="${i}">84</var>
+<status status="PASS" start="2025-09-25T22:36:33.173231" elapsed="2.045186"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:37.266628" level="INFO">${linkText} = U</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:35.218417" elapsed="2.048211"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:37.267459" elapsed="0.000994"/>
+</kw>
+<var name="${i}">85</var>
+<status status="PASS" start="2025-09-25T22:36:35.218417" elapsed="2.050036"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:39.345590" level="INFO">${linkText} = V</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:37.268453" elapsed="2.077137"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:39.345590" elapsed="0.001571"/>
+</kw>
+<var name="${i}">86</var>
+<status status="PASS" start="2025-09-25T22:36:37.268453" elapsed="2.078708"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:41.391067" level="INFO">${linkText} = W</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:36:39.347161" elapsed="2.043906"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:36:41.391067" elapsed="0.001995"/>
+</kw>
+<var name="${i}">87</var>
+<status status="PASS" start="2025-09-25T22:36:39.347161" elapsed="2.045901"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:36:42.778013" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654b4b91]
+	(No symbol) [0x0x7ff6655640fe]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:36:42.779010" level="FAIL">Element with locator 'xpath=(//a)[88]' not found.</msg>
+<var>${linkText}</var>
+<arg>xpath=(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-25T22:36:41.394059" elapsed="1.387176">Element with locator 'xpath=(//a)[88]' not found.</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-25T22:36:42.781235" elapsed="0.000000"/>
+</kw>
+<var name="${i}">88</var>
+<status status="FAIL" start="2025-09-25T22:36:41.393062" elapsed="1.389183">Element with locator 'xpath=(//a)[88]' not found.</status>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>${count}</value>
+<status status="FAIL" start="2025-09-25T22:33:25.953867" elapsed="196.828378">Element with locator 'xpath=(//a)[88]' not found.</status>
+</for>
+<status status="FAIL" start="2025-09-25T22:33:17.198360" elapsed="205.583885">Element with locator 'xpath=(//a)[88]' not found.</status>
+</test>
+<status status="FAIL" start="2025-09-25T22:33:16.732933" elapsed="206.050320"/>
+</suite>
+<suite id="s1-s12" name="TC1" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\TC1.robot">
+<test id="s1-s12-t1" name="Login Test" line="14">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:33:20.104346" elapsed="0.001059"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:20.106826" level="INFO">Opening browser 'chrome' to base url 'https://orleansexpress.com/fr/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:33:20.105405" elapsed="8.919213"/>
+</kw>
+<kw name="logiinToAccount">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:29.029605" level="INFO">Clicking link 'xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]'.</msg>
+<arg>xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:29.026613" elapsed="3.641683"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:32.670292" level="INFO">Typing text 'o.nagifi@icloud.com' into text field 'login_email'.</msg>
+<arg>login_email</arg>
+<arg>o.nagifi@icloud.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:32.669294" elapsed="3.269397"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:35.941727" level="INFO">Typing text 'Oth@2005.' into text field 'login_pass'.</msg>
+<arg>login_pass</arg>
+<arg>Oth@2005.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:35.939693" elapsed="3.288295"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:39.229193" level="INFO">Clicking element 'xpath://*[@id="button_connect"]'.</msg>
+<arg>xpath://*[@id="button_connect"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:39.227988" elapsed="2.261317"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:33:29.025616" elapsed="12.464693"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-25T22:33:41.491303" elapsed="3.166271"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:33:20.103335" elapsed="24.554239"/>
+</test>
+<status status="PASS" start="2025-09-25T22:33:19.376400" elapsed="25.282637"/>
+</suite>
+<suite id="s1-s13" name="UserdefinedKeywords" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\UserdefinedKeywords.robot">
+<test id="s1-s13-t1" name="Creating user_defined_keywords" line="11">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:33:46.428937" elapsed="0.001200"/>
+</kw>
+<kw name="Launch Browser" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:46.433211" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${appurl}</arg>
+<arg>${appbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:33:46.432179" elapsed="4.430341"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:33:50.862520" elapsed="1.045483"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:52.920785" level="INFO">${title} = OrangeHRM</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-25T22:33:51.908003" elapsed="1.013775"/>
+</kw>
+<return>
+<value>${title}</value>
+<status status="PASS" start="2025-09-25T22:33:52.921778" elapsed="0.000000"/>
+</return>
+<msg time="2025-09-25T22:33:52.922775" level="INFO">${pageTitle} = OrangeHRM</msg>
+<var>${pageTitle}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-09-25T22:33:46.431172" elapsed="6.491603"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${pageTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:52.923772" elapsed="0.000997"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:52.926764" level="INFO">Typing text 'lakhssass' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>lakhssass</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:52.924769" elapsed="3.480481"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:56.407246" level="INFO">Typing text 'lancii' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>lancii</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:56.406249" elapsed="3.168126"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:33:46.425946" elapsed="13.148429"/>
+</test>
+<status status="PASS" start="2025-09-25T22:33:45.881871" elapsed="13.693502"/>
+</suite>
+<suite id="s1-s14" name="inputBoxes" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\inputBoxes.robot">
+<test id="s1-s14-t1" name="TestingInputBox" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:03.577721" level="INFO">Opening browser 'chrome' to base url 'https://orleansexpress.com/fr/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:34:03.576699" elapsed="6.646674"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:34:10.224371" elapsed="0.098541"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:10.345655" level="INFO">Page title is 'Orléans Express | Voyages confortables en Autobus au Québec'.</msg>
+<arg>Orléans Express | Voyages confortables en Autobus au Québec</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-09-25T22:34:10.322912" elapsed="0.022743"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:10.347642" level="INFO">Clicking link 'xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]'.</msg>
+<arg>xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:10.346646" elapsed="0.363006"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-25T22:34:10.710649" level="INFO">${password_txt} = id:login_pass</msg>
+<var>${password_txt}</var>
+<arg>id:login_pass</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-25T22:34:10.709652" elapsed="0.000997"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:10.739542" level="INFO">Element 'id:login_pass' is displayed.</msg>
+<arg>${password_txt}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-25T22:34:10.711809" elapsed="0.027733"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${password_txt}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-09-25T22:34:10.739542" elapsed="0.034809"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:10.775364" level="INFO">Typing text 'Oth@2005.' into text field 'id:login_pass'.</msg>
+<arg>${password_txt}</arg>
+<arg>Oth@2005.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:10.774351" elapsed="0.261309"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:34:16.051215" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:34:11.036659" elapsed="5.014556"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${password_txt}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:16.052212" elapsed="0.074800"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:34:19.132372" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:34:16.127012" elapsed="3.005360"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-25T22:34:19.132372" elapsed="2.377406"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:34:03.574390" elapsed="17.935388"/>
+</test>
+<status status="PASS" start="2025-09-25T22:34:02.966537" elapsed="18.544588"/>
+</suite>
+<suite id="s1-s15" name="mulripleBrowsers" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\mulripleBrowsers.robot">
+<test id="s1-s15-t1" name="Handling Multiple windows" line="5">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:34:23.309341" elapsed="0.000998"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:23.310339" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:34:23.310339" elapsed="4.599120"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:34:27.909459" elapsed="1.060596"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:34:29.984320" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:34:28.971050" elapsed="1.014267"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:29.986575" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
+<arg>https://www.bing.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:34:29.985317" elapsed="3.026352"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:34:33.013666" elapsed="1.600634"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-09-25T22:34:34.614300" elapsed="0.001400"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:35.626432" level="INFO">${title1} = Google</msg>
+<var>${title1}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-25T22:34:34.615700" elapsed="1.010732"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:35.627430" elapsed="0.000998"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:34:36.639422" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:34:35.628428" elapsed="1.010994"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-09-25T22:34:36.639422" elapsed="0.001060"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:37.650959" level="INFO">${title2} = Recherche – Microsoft Bing</msg>
+<var>${title2}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-25T22:34:36.641491" elapsed="1.010578"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:34:37.652069" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:34:23.307146" elapsed="14.346199"/>
+</test>
+<status status="PASS" start="2025-09-25T22:34:22.749425" elapsed="14.903920"/>
+</suite>
+<suite id="s1-s16" name="tabbedWindows" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\tabbedWindows.robot">
+<test id="s1-s16-t1" name="Handling Tabbed windows" line="5">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:34:43.521676" elapsed="0.000998"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:43.523672" level="INFO">Opening browser 'chrome' to base url 'https://vinothqaacademy.com/multiple-windows/'.</msg>
+<arg>https://vinothqaacademy.com/multiple-windows/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:34:43.522674" elapsed="5.241202"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:34:48.763876" elapsed="1.047364"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:34:49.812457" level="INFO">Clicking element 'xpath://*[@id="button1"]'.</msg>
+<arg>xpath://*[@id="button1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:49.811240" elapsed="2.321964"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>title:Demo Site – WebTable – Vinoth Tech Solutions</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:34:52.133204" elapsed="13.268861"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:35:05.402065" elapsed="1.046471"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:35:06.449657" level="INFO">Clicking element 'xpath://*[@id="addBtn"]'.</msg>
+<arg>xpath://*[@id="addBtn"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:35:06.448536" elapsed="2.093654"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:34:43.520662" elapsed="25.021528"/>
+</test>
+<status status="PASS" start="2025-09-25T22:34:43.017497" elapsed="25.525862"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 16 executions.</doc>
+<status status="FAIL" start="2025-09-25T22:32:02.804000" elapsed="279.980000"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="10" fail="8" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="RegistrationTest" id="s1" pass="1" fail="0" skip="0">RegistrationTest</stat>
+<stat name="Suites" id="s1" pass="10" fail="8" skip="0">Suites</stat>
+<stat name="Alerts" id="s1-s1" pass="1" fail="0" skip="0">Suites.Alerts</stat>
+<stat name="Data Driven" id="s1-s2" pass="1" fail="2" skip="0">Suites.Data Driven</stat>
+<stat name="Dropdown" id="s1-s3" pass="0" fail="1" skip="0">Suites.Dropdown</stat>
+<stat name="Frames" id="s1-s4" pass="1" fail="0" skip="0">Suites.Frames</stat>
+<stat name="MouseAcrions" id="s1-s5" pass="1" fail="0" skip="0">Suites.MouseAcrions</stat>
+<stat name="NavigationKeywords" id="s1-s6" pass="1" fail="0" skip="0">Suites.NavigationKeywords</stat>
+<stat name="Page object model" id="s1-s7" pass="0" fail="1" skip="0">Suites.Page object model</stat>
+<stat name="RadioButtons" id="s1-s8" pass="0" fail="1" skip="0">Suites.RadioButtons</stat>
+<stat name="RegistrationTest" id="s1-s9" pass="0" fail="1" skip="0">Suites.RegistrationTest</stat>
+<stat name="ScreenshotTest" id="s1-s10" pass="0" fail="1" skip="0">Suites.ScreenshotTest</stat>
+<stat name="Scrolling" id="s1-s11" pass="0" fail="1" skip="0">Suites.Scrolling</stat>
+<stat name="TC1" id="s1-s12" pass="1" fail="0" skip="0">Suites.TC1</stat>
+<stat name="UserdefinedKeywords" id="s1-s13" pass="1" fail="0" skip="0">Suites.UserdefinedKeywords</stat>
+<stat name="inputBoxes" id="s1-s14" pass="1" fail="0" skip="0">Suites.inputBoxes</stat>
+<stat name="mulripleBrowsers" id="s1-s15" pass="1" fail="0" skip="0">Suites.mulripleBrowsers</stat>
+<stat name="tabbedWindows" id="s1-s16" pass="1" fail="0" skip="0">Suites.tabbedWindows</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-09-25T22:32:29.401166" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:32:29.418138" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:32:25.980378" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654b4b91]
+	(No symbol) [0x0x7ff6655640fe]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:33:05.323744" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654b4b91]
+	(No symbol) [0x0x7ff6655640fe]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:33:03.497867" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:33:15.823070" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:33:13.550466" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:36:42.778013" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654b4b91]
+	(No symbol) [0x0x7ff6655640fe]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:33:46.421521" level="WARN">Error in file 'C:\Users\onagi\OneDrive\Documents\Automation_Test_project\Resources\resources.robot' on line 10: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>

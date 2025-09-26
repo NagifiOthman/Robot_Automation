@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-25T22:32:29.226204" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Frames" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\Frames.robot">
+<test id="s1-s1-t1" name="Handling Frames" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:29.726647" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/practice/frames.php'.</msg>
+<arg>https://www.tutorialspoint.com/selenium/practice/frames.php</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:29.726647" elapsed="2.416059"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:32:32.142706" elapsed="0.045052"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:32.189754" level="INFO">Selecting frame 'xpath:/html/body/main/div/div/div[2]/iframe[1]'.</msg>
+<arg>xpath:/html/body/main/div/div/div[2]/iframe[1]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-09-25T22:32:32.188756" elapsed="0.046097"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:32.235850" level="INFO">Clicking link '/selenium/index.htm'.</msg>
+<arg>/selenium/index.htm</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:32.235850" elapsed="0.246013"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-09-25T22:32:32.482857" elapsed="0.008413"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:32:34.493697" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:32:32.491270" elapsed="2.003423"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.494693" elapsed="0.053757"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:34.551447" level="INFO">Selecting frame 'xpath:/html/body/main/div/div/div[2]/iframe[2]'.</msg>
+<arg>xpath:/html/body/main/div/div/div[2]/iframe[2]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.550445" elapsed="0.078153"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=a[href="/selenium/index.htm"]</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.628598" elapsed="0.052035"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>css=a[href="/selenium/index.htm"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.680633" elapsed="0.328606"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:35.010376" level="INFO">Clicking link '/selenium/index.htm'.</msg>
+<arg>/selenium/index.htm</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:35.010376" elapsed="0.271264"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-09-25T22:32:35.282638" elapsed="0.060954"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:29.724585" elapsed="5.620002"/>
+</test>
+<status status="PASS" start="2025-09-25T22:32:29.279168" elapsed="6.066416"/>
+</suite>
+<status status="PASS" start="2025-09-25T22:32:29.244290" elapsed="6.102641"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Frames" id="s1-s1" pass="1" fail="0" skip="0">Suites.Frames</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

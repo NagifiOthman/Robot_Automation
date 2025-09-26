@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-25T22:33:19.247936" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TC1" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\TC1.robot">
+<test id="s1-s1-t1" name="Login Test" line="14">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:33:20.104346" elapsed="0.001059"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:20.106826" level="INFO">Opening browser 'chrome' to base url 'https://orleansexpress.com/fr/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:33:20.105405" elapsed="8.919213"/>
+</kw>
+<kw name="logiinToAccount">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:29.029605" level="INFO">Clicking link 'xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]'.</msg>
+<arg>xpath://*[@id="masthead"]/div[2]/div/div/nav/div[2]/a[1]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:29.026613" elapsed="3.641683"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:32.670292" level="INFO">Typing text 'o.nagifi@icloud.com' into text field 'login_email'.</msg>
+<arg>login_email</arg>
+<arg>o.nagifi@icloud.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:32.669294" elapsed="3.269397"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:35.941727" level="INFO">Typing text 'Oth@2005.' into text field 'login_pass'.</msg>
+<arg>login_pass</arg>
+<arg>Oth@2005.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:35.939693" elapsed="3.288295"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:39.229193" level="INFO">Clicking element 'xpath://*[@id="button_connect"]'.</msg>
+<arg>xpath://*[@id="button_connect"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:39.227988" elapsed="2.261317"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:33:29.025616" elapsed="12.464693"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-25T22:33:41.491303" elapsed="3.166271"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:33:20.103335" elapsed="24.554239"/>
+</test>
+<status status="PASS" start="2025-09-25T22:33:19.376400" elapsed="25.282637"/>
+</suite>
+<status status="PASS" start="2025-09-25T22:33:19.304595" elapsed="25.365268"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="TC1" id="s1-s1" pass="1" fail="0" skip="0">Suites.TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

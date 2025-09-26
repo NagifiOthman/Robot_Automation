@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-25T22:33:08.596877" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="ScreenshotTest" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\ScreenshotTest.robot">
+<test id="s1-s1-t1" name="Screenshots Test" line="5">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:33:09.177501" elapsed="0.000997"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:09.179496" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:33:09.178498" elapsed="4.219758"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:13.550466" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<msg time="2025-09-25T22:33:13.551554" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2025-09-25T22:33:13.399248" elapsed="0.156984">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:username</arg>
+<arg>lakhssass</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T22:33:13.556232" elapsed="0.001151"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>lancii</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-25T22:33:13.557383" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<arg>xpath://*[@id="app"]/div[1]/div/div[1]/div/div[1]/img</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="NOT RUN" start="2025-09-25T22:33:13.558408" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-09-25T22:33:09.175495" elapsed="4.382913">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dcada]
+	(No symbol) [0x0x7ff6654c8995]
+	(No symbol) [0x0x7ff6654edbda]
+	(No symbol) [0x0x7ff665564346]
+	(No symbol) [0x0x7ff6655848c2]
+	(No symbol) [0x0x7ff66555c8b3]
+	(No symbol) [0x0x7ff665525272]
+	(No symbol) [0x0x7ff665526043]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	GetHandleVerifier [0x0x7ff665768ab4+116244]
+	GetHandleVerifier [0x0x7ff665768c69+116681]
+	GetHandleVerifier [0x0x7ff66574f048+11176]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</status>
+</test>
+<status status="FAIL" start="2025-09-25T22:33:08.681375" elapsed="4.879529"/>
+</suite>
+<status status="FAIL" start="2025-09-25T22:33:08.623377" elapsed="4.938828"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="1" skip="0">Suites</stat>
+<stat name="ScreenshotTest" id="s1-s1" pass="0" fail="1" skip="0">Suites.ScreenshotTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-25T22:33:13.550466" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+</msg>
+</errors>
+</robot>

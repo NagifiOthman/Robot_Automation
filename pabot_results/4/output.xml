@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-25T22:32:33.563830" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="MouseAcrions" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\MouseAcrions.robot">
+<test id="s1-s1-t1" name="Mouse Actions" line="5">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.273423" elapsed="0.000999"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:34.275557" level="INFO">Opening browser 'chrome' to base url 'https://vinothqaacademy.com/mouse-event/'.</msg>
+<arg>https://vinothqaacademy.com/mouse-event/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:34.274422" elapsed="5.301147"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:32:39.575569" elapsed="1.042858"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath://*[@id="rightclick"]</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:40.619424" elapsed="2.354137"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:42.974560" level="INFO">Double clicking element 'xpath://*[@id="dblclick"]'.</msg>
+<arg>xpath://*[@id="dblclick"]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:32:42.974560" elapsed="2.337253"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:draggableElement</arg>
+<arg>id:droppableElement</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-09-25T22:32:45.311813" elapsed="3.615738"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:34.271429" elapsed="14.656122"/>
+</test>
+<status status="PASS" start="2025-09-25T22:32:33.624936" elapsed="15.304001"/>
+</suite>
+<status status="PASS" start="2025-09-25T22:32:33.584779" elapsed="15.354681"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="MouseAcrions" id="s1-s1" pass="1" fail="0" skip="0">Suites.MouseAcrions</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

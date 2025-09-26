@@ -1,0 +1,32 @@
+--name Suites
+--suite Suites.mulripleBrowsers
+--variable CALLER_ID:1b9379ce57d64cdb93c11613dac4bceb
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:1
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:2
+--variable PABOTQUEUEINDEX:14
+--variable PABOTLASTLEVEL:Suites.mulripleBrowsers
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\14
+--consolecolors off
+--consolemarkers off
+TestCases\Frames.robot
+TestCases\MouseAcrions.robot
+TestCases\NavigationKeywords.robot
+TestCases\Page_object_model.robot
+TestCases\RadioButtons.robot
+TestCases\RegistrationTest.robot
+TestCases\ScreenshotTest.robot
+TestCases\Scrolling.robot
+TestCases\TC1.robot
+TestCases\UserdefinedKeywords.robot
+TestCases\alerts.robot
+TestCases\data_driven.robot
+TestCases\dropdown.robot
+TestCases\inputBoxes.robot
+TestCases\mulripleBrowsers.robot
+TestCases\tabbedWindows.robot

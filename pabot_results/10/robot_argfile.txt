@@ -1,0 +1,32 @@
+--name Suites
+--suite Suites.Scrolling
+--variable CALLER_ID:1fd2d6d22e084b1793c56a4095dda75b
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:0
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:2
+--variable PABOTQUEUEINDEX:10
+--variable PABOTLASTLEVEL:Suites.Scrolling
+--listener RobotStackTracer
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\10
+--consolecolors off
+--consolemarkers off
+TestCases\Frames.robot
+TestCases\MouseAcrions.robot
+TestCases\NavigationKeywords.robot
+TestCases\Page_object_model.robot
+TestCases\RadioButtons.robot
+TestCases\RegistrationTest.robot
+TestCases\ScreenshotTest.robot
+TestCases\Scrolling.robot
+TestCases\TC1.robot
+TestCases\UserdefinedKeywords.robot
+TestCases\alerts.robot
+TestCases\data_driven.robot
+TestCases\dropdown.robot
+TestCases\inputBoxes.robot
+TestCases\mulripleBrowsers.robot
+TestCases\tabbedWindows.robot

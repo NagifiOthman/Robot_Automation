@@ -1,0 +1,20 @@
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff66575fc95+79861]
+	GetHandleVerifier [0x0x7ff66575fcf0+79952]
+	(No symbol) [0x0x7ff6654dc8fc]
+	(No symbol) [0x0x7ff66552438d]
+	(No symbol) [0x0x7ff66555c9a2]
+	(No symbol) [0x0x7ff665557374]
+	(No symbol) [0x0x7ff66555642a]
+	(No symbol) [0x0x7ff6654a7075]
+	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
+	GetHandleVerifier [0x0x7ff665a359d7+3052855]
+	GetHandleVerifier [0x0x7ff66577aa7e+189918]
+	GetHandleVerifier [0x0x7ff665782a1f+222591]
+	(No symbol) [0x0x7ff6654a602c]
+	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
+	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
+	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-25T22:33:45.825801" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="UserdefinedKeywords" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\UserdefinedKeywords.robot">
+<test id="s1-s1-t1" name="Creating user_defined_keywords" line="11">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-25T22:33:46.428937" elapsed="0.001200"/>
+</kw>
+<kw name="Launch Browser" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:46.433211" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${appurl}</arg>
+<arg>${appbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:33:46.432179" elapsed="4.430341"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-25T22:33:50.862520" elapsed="1.045483"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:52.920785" level="INFO">${title} = OrangeHRM</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-25T22:33:51.908003" elapsed="1.013775"/>
+</kw>
+<return>
+<value>${title}</value>
+<status status="PASS" start="2025-09-25T22:33:52.921778" elapsed="0.000000"/>
+</return>
+<msg time="2025-09-25T22:33:52.922775" level="INFO">${pageTitle} = OrangeHRM</msg>
+<var>${pageTitle}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-09-25T22:33:46.431172" elapsed="6.491603"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${pageTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:33:52.923772" elapsed="0.000997"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:52.926764" level="INFO">Typing text 'lakhssass' into text field 'name:username'.</msg>
+<arg>name:username</arg>
+<arg>lakhssass</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:52.924769" elapsed="3.480481"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:33:56.407246" level="INFO">Typing text 'lancii' into text field 'name:password'.</msg>
+<arg>name:password</arg>
+<arg>lancii</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-25T22:33:56.406249" elapsed="3.168126"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:33:46.425946" elapsed="13.148429"/>
+</test>
+<status status="PASS" start="2025-09-25T22:33:45.881871" elapsed="13.693502"/>
+</suite>
+<status status="PASS" start="2025-09-25T22:33:45.842310" elapsed="13.735057"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="UserdefinedKeywords" id="s1-s1" pass="1" fail="0" skip="0">Suites.UserdefinedKeywords</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-09-25T22:33:46.421521" level="WARN">Error in file 'C:\Users\onagi\OneDrive\Documents\Automation_Test_project\Resources\resources.robot' on line 10: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

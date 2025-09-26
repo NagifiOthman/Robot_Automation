@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.4 on win32)" generated="2025-09-25T22:32:38.636932" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="NavigationKeywords" source="C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\NavigationKeywords.robot">
+<test id="s1-s1-t1" name="NavigationKeywords Test" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:39.217037" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:39.217037" elapsed="2.359142"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:41.583157" level="INFO">${loc1} = https://www.google.com/</msg>
+<var>${loc1}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-09-25T22:32:41.577450" elapsed="0.005707"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:32:41.584157" elapsed="0.000997"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:32:42.599000" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:32:41.585154" elapsed="1.013846"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:42.600509" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
+<arg>https://www.bing.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-25T22:32:42.599000" elapsed="1.870181"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2025-09-25T22:32:44.480771" level="INFO">${loc2} = https://www.bing.com/</msg>
+<var>${loc2}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2025-09-25T22:32:44.470173" elapsed="0.010598"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-25T22:32:44.480771" elapsed="0.001081"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-25T22:32:45.483665" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-25T22:32:44.481852" elapsed="1.001813"/>
+</kw>
+<status status="PASS" start="2025-09-25T22:32:39.213927" elapsed="6.269738"/>
+</test>
+<status status="PASS" start="2025-09-25T22:32:38.713911" elapsed="6.770750"/>
+</suite>
+<status status="PASS" start="2025-09-25T22:32:38.669554" elapsed="6.817101"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="NavigationKeywords" id="s1-s1" pass="1" fail="0" skip="0">Suites.NavigationKeywords</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
