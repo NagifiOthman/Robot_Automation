@@ -32,7 +32,7 @@ It demonstrates industry-standard practices such as **Page Object Model (POM)**,
 
 ---
 
-## 🎥 Learning Path – Video Titles  
+## 🎥 Learning Path 
 
 Here’s the progression of topics I followed (based on the video series):  
 
