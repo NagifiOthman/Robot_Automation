@@ -34,7 +34,7 @@ It demonstrates industry-standard practices such as **Page Object Model (POM)**,
 
 ## 🎥 Learning Path 
 
-Here’s the progression of topics I followed (based on the video series):  
+Here’s the progression of topics I followed :  
 
 1. Introduction to Robot Framework  
 2. Installation of Python, PIP, and Robot Framework  
