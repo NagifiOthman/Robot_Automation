@@ -1,20 +1,6 @@
-datasources:1c7304f2374eb35150cf9f95ba489fb451bf6a08
+datasources:1232e8ec789995999ce3d07bddba95b4098e0dc6
 commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
 suitesfrom:no-suites-from-option
-file:78c33f527d379bda9b280a73abee03ae6e4e135c
---suite Suites.Alerts
---suite Suites.Data Driven
---suite Suites.Dropdown
---suite Suites.Frames
---suite Suites.MouseAcrions
---suite Suites.NavigationKeywords
+file:162e39e2c8074bacbab9e6b75061ad5993fcf11f
 --suite Suites.Page object model
---suite Suites.RadioButtons
---suite Suites.RegistrationTest
---suite Suites.ScreenshotTest
---suite Suites.Scrolling
 --suite Suites.TC1
---suite Suites.UserdefinedKeywords
---suite Suites.inputBoxes
---suite Suites.mulripleBrowsers
---suite Suites.tabbedWindows

@@ -15,6 +15,6 @@ LoginTest
     Enter UserName     ${user}
     Enter Password     ${pwd}
     Click SignIn
-    Verify Successful Login
+    Verify Successful Login 
     Close my Browsers
     

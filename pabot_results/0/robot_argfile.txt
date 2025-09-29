@@ -1,12 +1,12 @@
 --name Suites
---suite Suites.Alerts
---variable CALLER_ID:61a662d954d340f399b64bf4cbc66198
+--suite Suites.Page object model
+--variable CALLER_ID:e9b9aec6a4fb46599b1c08709a3503c0
 --variable PABOTLIBURI:127.0.0.1:8270
---variable PABOTEXECUTIONPOOLID:0
+--variable PABOTEXECUTIONPOOLID:1
 --variable PABOTISLASTEXECUTIONINPOOL:0
---variable PABOTNUMBEROFPROCESSES:2
+--variable PABOTNUMBEROFPROCESSES:12
 --variable PABOTQUEUEINDEX:0
---variable PABOTLASTLEVEL:Suites.Alerts
+--variable PABOTLASTLEVEL:Suites.Page object model
 --listener RobotStackTracer
 --log NONE
 --report NONE
@@ -14,19 +14,5 @@
 --outputdir .\pabot_results\0
 --consolecolors off
 --consolemarkers off
-TestCases\Frames.robot
-TestCases\MouseAcrions.robot
-TestCases\NavigationKeywords.robot
-TestCases\Page_object_model.robot
-TestCases\RadioButtons.robot
-TestCases\RegistrationTest.robot
-TestCases\ScreenshotTest.robot
-TestCases\Scrolling.robot
-TestCases\TC1.robot
-TestCases\UserdefinedKeywords.robot
-TestCases\alerts.robot
-TestCases\data_driven.robot
-TestCases\dropdown.robot
-TestCases\inputBoxes.robot
-TestCases\mulripleBrowsers.robot
-TestCases\tabbedWindows.robot
+TestCases/Page_object_model.robot
+TestCases/TC1.robot

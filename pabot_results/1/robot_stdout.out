@@ -1,95 +1,14 @@
 ==============================================================================
 Suites                                                                        
 ==============================================================================
-Suites.Data Driven                                                            
+Suites.TC1                                                                    
 ==============================================================================
-Right user empty pass                                                 | PASS |
+Login Test                                                            | PASS |
 ------------------------------------------------------------------------------
-Right user wrong pass                                                   
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\data_driven.robot:20
-    T:  Right user wrong pass    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\data_driven.robot:20
-      Invalid login with empty password    Admin    admin
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\data_driven.robot:40
-      Input pwd    ${password}
-      |  ${password} = admin (str)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\onagi\OneDrive\Documents\Automation_Test_project\Resources\login_resources.robot:26
-      Input Text    name:password    ${password}
-      |  ${password} = admin (str)
-______________________________________________________________________________
-| FAIL |
-InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff66575fc95+79861]
-	GetHandleVerifier [0x0x7ff66575fcf0+79952]
-	(No symbol) [0x0x7ff6654dcada]
-	(No symbol) [0x0x7ff6654c8995]
-	(No symbol) [0x0x7ff6654edbda]
-	(No symbol) [0x0x7ff665564346]
-	(No symbol) [0x0x7ff6655848c2]
-	(No symbol) [0x0x7ff66555c8b3]
-	(No symbol) [0x0x7ff665525272]
-	(No symbol) [0x0x7ff665526043]
-	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
-	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
-	GetHandleVerifier [0x0x7ff665a359d7+3052855]
-	GetHandleVerifier [0x0x7ff66577aa7e+189918]
-	GetHandleVerifier [0x0x7ff665782a1f+222591]
-	GetHandleVerifier [0x0x7ff665768ab4+116244]
-	GetHandleVerifier [0x0x7ff665768c69+116681]
-	GetHandleVerifier [0x0x7ff66574f048+11176]
-	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
-	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
-------------------------------------------------------------------------------
-Wrong user wrong pass                                                   
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\data_driven.robot:23
-    T:  Wrong user wrong pass    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\data_driven.robot:23
-      Invalid login with empty password    lakhssass    lancii
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\onagi\OneDrive\Documents\Automation_Test_project\TestCases\data_driven.robot:39
-      Input username    ${username}
-      |  ${username} = lakhssass (str)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\onagi\OneDrive\Documents\Automation_Test_project\Resources\login_resources.robot:23
-      Input Text    name:username    ${username}
-      |  ${username} = lakhssass (str)
-______________________________________________________________________________
-| FAIL |
-InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff66575fc95+79861]
-	GetHandleVerifier [0x0x7ff66575fcf0+79952]
-	(No symbol) [0x0x7ff6654dc8fc]
-	(No symbol) [0x0x7ff66552438d]
-	(No symbol) [0x0x7ff66555c9a2]
-	(No symbol) [0x0x7ff665557374]
-	(No symbol) [0x0x7ff66555642a]
-	(No symbol) [0x0x7ff6654a7075]
-	GetHandleVerifier [0x0x7ff665a1b9cd+2946349]
-	GetHandleVerifier [0x0x7ff665a15c4a+2922410]
-	GetHandleVerifier [0x0x7ff665a359d7+3052855]
-	GetHandleVerifier [0x0x7ff66577aa7e+189918]
-	GetHandleVerifier [0x0x7ff665782a1f+222591]
-	(No symbol) [0x0x7ff6654a602c]
-	GetHandleVerifier [0x0x7ff665b4e3f8+4202328]
-	BaseThreadInitThunk [0x0x7ffd1387e8d7+23]
-	RtlUserThreadStart [0x0x7ffd13b68d9c+44]
-------------------------------------------------------------------------------
-Suites.Data Driven                                                    | FAIL |
-3 tests, 1 passed, 2 failed
+Suites.TC1                                                            | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Suites                                                                | FAIL |
-3 tests, 1 passed, 2 failed
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\onagi\OneDrive\Documents\Automation_Test_project\pabot_results\1\output.xml

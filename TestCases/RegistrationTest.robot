@@ -24,7 +24,7 @@ RegistrationTest
     Enter username            lakhssass
     Enter password            johnxyz
     Enter comfirmed Password  johnxyz
-    Sleep    2
+    Sleep    3
     Click envoyer
 
     Verify Successful Registration
